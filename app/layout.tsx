@@ -1,7 +1,8 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/modules/Navbar/Navbar";
+import { Text } from "@/modules/Text/Text";
+import { Link } from "@/modules/ui/Button/Link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,18 +19,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <h1 className="text-red-0">koksze</h1>
-        <Navbar>
-          <Navbar.NavbarItem visibility="both">LOGO</Navbar.NavbarItem>
-          <Navbar.Group>
-            <Navbar.NavbarGroupItem visibility="both">
-              MOVIES
-            </Navbar.NavbarGroupItem>
-            <Navbar.NavbarGroupItem visibility="both">
-              ACTORS
-            </Navbar.NavbarGroupItem>
-          </Navbar.Group>
-        </Navbar>
+        <div className="mb-12">
+          <Navbar>
+            <Navbar.Group>
+              <Navbar.NavbarGroupItem visibility="both">
+                <Link href="/">LOGO</Link>
+              </Navbar.NavbarGroupItem>
+              <Navbar.NavbarGroupItem visibility="both">
+                <Text>CREATE AN ACCOUNT</Text>
+              </Navbar.NavbarGroupItem>
+              <Navbar.NavbarGroupItem visibility="both">
+                <Text>LOG IN</Text>
+              </Navbar.NavbarGroupItem>
+            </Navbar.Group>
+          </Navbar>
+        </div>
         {children}
       </body>
     </html>

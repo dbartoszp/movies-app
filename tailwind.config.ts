@@ -15,6 +15,9 @@ module.exports = {
       },
       colors: {
         "dark-blue": "var(--dark-blue)",
+        "light-blue": "var(--light-blue)",
+        "light-blue-lighter": "var(--light-blue-lighter)",
+        "default-blue": "var(--default-blue)",
       },
     },
   },

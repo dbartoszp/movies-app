@@ -7,7 +7,7 @@ type NavbarProps = {
 
 export function Navbar({ children }: NavbarProps) {
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between border-b-2 border-light-olive bg-light-green  p-3 uppercase text-elden-beige">
+    <nav className="fixed left-0 right-0 top-0 z-50 flex flex-col items-center justify-between border-b-2 border-light-olive bg-light-green  p-3 uppercase text-elden-beige">
       {children}
     </nav>
   );
