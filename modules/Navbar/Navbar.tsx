@@ -7,7 +7,7 @@ type NavbarProps = {
 
 export function Navbar({ children }: NavbarProps) {
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50 flex flex-col items-center justify-between border-b-2 border-light-olive bg-light-green  p-3 uppercase text-elden-beige">
+    <nav className="fixed left-0 right-0 top-0 z-50 flex flex-col items-center justify-between  bg-dark-blue p-3">
       {children}
     </nav>
   );
@@ -19,7 +19,7 @@ type GroupProps = {
 
 const Group = ({ children }: GroupProps) => {
   return (
-    <ul className="flex list-none flex-row  space-x-8 lg:space-x-12">
+    <ul className="flex list-none flex-row space-x-8 lg:space-x-16">
       {children}
     </ul>
   );

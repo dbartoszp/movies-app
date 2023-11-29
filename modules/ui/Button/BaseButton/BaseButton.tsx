@@ -40,15 +40,15 @@ const sizes: Sizes = {
 
 const variants: ClassNames = {
   primary: "bg-dark-blue enabled:hover:bg-light-blue",
-  secondary:
-    "enabled:hover:bg-light-olive-lighter bg-light-blue text-dark-blue",
-  link: "text-elden-beige bg-transparent enabled:hover:bg-transparent enabled:hover:underline",
+  secondary: "enabled:hover:bg-light-blue-lighter bg-light-blue",
+  link: "bg-transparent enabled:hover:bg-transparent enabled:hover:underline",
+  green: "bg-green-700  enabled:hover:bg-red-600  ",
   danger:
     "bg-red-700 text-red-100 enabled:hover:bg-red-600  border border-red-50",
 };
 export const BaseButton = (props: BaseButtonProps) => {
-  const { variant = "primary", size = "md", rounded = true } = props;
-  const className = clsx("font-semibold transition-all duration-300", {
+  const { variant = "primary", size = "md", rounded = false } = props;
+  const className = clsx("transition-all duration-300", {
     [variants[variant]]: props.variant,
     [sizes[size]]: props.size,
     "rounded-xl": rounded,

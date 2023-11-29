@@ -12,8 +12,8 @@ type ClassNames = {
 
 const variants: ClassNames = {
   default: "text-md",
-  title: "text-3xl uppercase tracking-widest font-light",
-  mainInfo: "text-lg font-normal",
+  title: "text-lg md:text-3xl  tracking-widest font-light",
+  mainInfo: "text-md font-normal",
 };
 
 export const Text = (props: TextProps) => {
