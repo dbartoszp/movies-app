@@ -19,10 +19,10 @@ export const Footer = () => {
 					<Text>Email - bartpom034@student.polsl.pl</Text>
 					<div className="flex flex-row space-x-6">
 						<Link href="https://www.linkedin.com/in/bartosz-pomierny-b751aa274/">
-							<FaLinkedin size={30} />
+							<FaLinkedin size={process.env.ICON_SIZE} />
 						</Link>
 						<Link href="https://github.com/dbartoszp">
-							<FaGithub size={30} />
+							<FaGithub size={process.env.ICON_SIZE} />
 						</Link>
 					</div>
 				</div>
