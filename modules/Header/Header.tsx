@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { Link } from "../ui/Button/Link";
-import Navbar from "../Navbar/Navbar";
-import { Text } from "../Text/Text";
+import { Link } from '../ui/Button/Link';
+import Navbar from '../Navbar/Navbar';
+import { Text } from '../Text/Text';
 
 // const iconSize = 30;
 
@@ -12,21 +12,21 @@ export const Header = () => {
   //   const onMobileToggleMenu = () =>
   //     setIsOpenMobileMenu((prevState) => !prevState);
   return (
-    <header className="mb-12">
+    <header className='mb-12'>
       <Navbar>
         <Navbar.Group>
-          <Navbar.NavbarGroupItem visibility="both">
-            <Link href="/">
+          <Navbar.NavbarGroupItem visibility='both'>
+            <Link href='/'>
               <Text>LOGO</Text>
             </Link>
           </Navbar.NavbarGroupItem>
-          <Navbar.NavbarGroupItem visibility="both">
-            <Link href="/">
+          <Navbar.NavbarGroupItem visibility='both'>
+            <Link href='/movies'>
               <Text>MOVIES</Text>
             </Link>
           </Navbar.NavbarGroupItem>
-          <Navbar.NavbarGroupItem visibility="both">
-            <Link href="/">
+          <Navbar.NavbarGroupItem visibility='both'>
+            <Link href='/login'>
               <Text>ACCOUNT</Text>
             </Link>
           </Navbar.NavbarGroupItem>
