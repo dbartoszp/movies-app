@@ -1,33 +1,28 @@
+'use client';
+import { Text } from '@/modules/Text/Text';
+import React from 'react';
 import { FormRow } from '../FormRow/FormRow';
-import { Button } from '../../../ui/Button/Button';
-import { useLogin } from '@/modules/auth/user/hooks/useLogin/useLogin';
 import { useForm } from 'react-hook-form';
+import { Button } from '@/modules/ui/Button/Button';
 
-export function LoginForm() {
-  const login = useLogin();
-
+export const LoginForm = () => {
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
 
-  const onSubmit = handleSubmit(({ email, password }) => {
-    login.mutate({
-      password,
-      email,
-    });
-  });
+  const onSubmit = () => {
+    console.log('submitted');
+  };
 
   return (
     <>
-      <span className='border-b-dark-green text-dark-green ml-4 border-b pb-1 text-3xl font-semibold tracking-wide'>
-        LOGIN
-      </span>
-      <form onSubmit={onSubmit} className='px-4 py-9 '>
-        <FormRow label='EMAIL' id='email'>
+      <Text variant='title'>LOGIN</Text>
+      <form onSubmit={onSubmit}>
+        <FormRow label='EMAIL' id='EMAIL'>
           <input
-            className='text-dark-green  rounded-sm px-6 py-3 shadow-md'
+            className='rounded-sm px-3 text-dark-blue'
             type='email'
             id='email'
             {...register('email', {
@@ -35,30 +30,26 @@ export function LoginForm() {
             })}
           />
           {errors.email?.message && (
-            <span className='text-lg font-semibold text-red-700'>
-              Email or password does not match
-            </span>
+            <Text variant='danger'>Email or password does not match</Text>
           )}
         </FormRow>
-        <FormRow label='PASSWORD' id='password'>
+        <FormRow label='PASSWORD' id='PASSWORD'>
           <input
-            className='text-dark-green rounded-sm px-6 py-3 shadow-md'
+            className='rounded-sm px-3 text-dark-blue'
             type='password'
             id='password'
             {...register('password', {
               required: true,
             })}
           />
-          {errors.password?.message && (
-            <span className='text-lg font-semibold text-red-700'>
-              Email or password does not match
-            </span>
+          {errors.email?.message && (
+            <Text variant='danger'>Email or password does not match</Text>
           )}
         </FormRow>
         <FormRow>
           <Button
-            disabled={login.isLoading}
-            variant='primary'
+            // disabled={login.isLoading}
+            variant='green'
             size='lg'
             onClick={onSubmit}
           >
@@ -68,4 +59,4 @@ export function LoginForm() {
       </form>
     </>
   );
-}
+};

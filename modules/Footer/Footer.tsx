@@ -6,7 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
-    <footer className='h-36 w-full bg-dark-blue'>
+    <footer className='mt-6 h-36 w-full bg-dark-blue'>
       <div className='flex flex-col space-y-10 pt-6 text-center'>
         <div>
           <Text>All about your favourite movies.</Text>

@@ -1,119 +1,101 @@
-import { Button } from '../../../ui/Button/Button';
-import { FormRow } from '../FormRow/FormRow';
-
+'use client';
 import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
-// import { useSignup } from "@/modules/auth/user/hooks/useSignup/useSignup";
-import { RegisterFormSchema } from './RegisterForm.schema';
+import { FormRow } from '../FormRow/FormRow';
+import { Text } from '@/modules/Text/Text';
+import { Button } from '@/modules/ui/Button/Button';
 
-type FormValues = z.infer<typeof RegisterFormSchema>;
-
-export function RegisterForm() {
-  //   const signup = useSignup();
-
+export const RegisterForm = () => {
   const {
     register,
     formState: { errors },
     handleSubmit,
-  } = useForm<FormValues>({ resolver: zodResolver(RegisterFormSchema) });
+  } = useForm();
 
-  const onSubmit = handleSubmit(
-    ({ firstName, lastName, passwordSignup, emailSignup }) => {
-      signup.mutate({
-        firstName,
-        lastName,
-        password: passwordSignup,
-        email: emailSignup,
-      });
-    }
-  );
+  const onSubmit = () => {
+    console.log('submitted');
+  };
 
   return (
     <>
-      <span className='border-b-dark-green text-dark-green ml-4 border-b pb-1 text-3xl font-semibold tracking-wide'>
-        ...OR CREATE AN ACCOUNT
-      </span>
-      <form onSubmit={onSubmit} className='mb-32 px-4 py-9'>
-        <FormRow id='firstName' label='FIRST NAME'>
+      <Text variant='title'>CREATE A NEW ACCOUNT</Text>
+      <form onSubmit={onSubmit}>
+        <FormRow label='FIRST NAME' id='FIRSTNAME'>
           <input
+            className='rounded-sm px-3 text-dark-blue'
             type='text'
             id='firstName'
-            className='text-dark-green  rounded-sm px-6 py-3 shadow-md'
             {...register('firstName', {
               required: true,
             })}
           />
-          {errors.firstName?.message && (
-            <span className='text-lg font-semibold text-red-700'>
-              Please provide a valid first name
-            </span>
+          {errors.email?.message && (
+            <Text variant='danger'>Email or password does not match</Text>
           )}
         </FormRow>
-        <FormRow id='lastName' label='LAST NAME'>
+        <FormRow label='LAST NAME' id='LASTNAME'>
           <input
+            className='rounded-sm px-3 text-dark-blue'
             type='text'
             id='lastName'
-            className='text-dark-green  rounded-sm px-6 py-3 shadow-md'
             {...register('lastName', {
               required: true,
             })}
           />
-          {errors.lastName?.message && (
-            <span className='text-lg font-semibold text-red-700'>
-              Please provide a valid last name
-            </span>
+          {errors.email?.message && (
+            <Text variant='danger'>Email or password does not match</Text>
           )}
         </FormRow>
-        <FormRow id='emailSignup' label='EMAIL'>
+        <FormRow label='EMAIL' id='EMAIL'>
           <input
+            className='rounded-sm px-3 text-dark-blue'
             type='email'
             id='emailSignup'
-            className='text-dark-green  rounded-sm px-6 py-3 shadow-md'
-            {...register('emailSignup', { required: true })}
+            {...register('emailSignup', {
+              required: true,
+            })}
           />
-          {errors.emailSignup?.message && (
-            <span className='text-lg font-semibold text-red-700'>
-              Please provide a valid email address
-            </span>
+          {errors.email?.message && (
+            <Text variant='danger'>Email or password does not match</Text>
           )}
         </FormRow>
-        <FormRow id='passwordSignup' label='PASSWORD (min 8 characters)'>
+        <FormRow label='PASSWORD' id='PASSWORD (min 8 characters)'>
           <input
+            className='rounded-sm px-3 text-dark-blue'
             type='password'
             id='passwordSignup'
-            className='text-dark-green  rounded-sm px-6 py-3 shadow-md'
             {...register('passwordSignup', {
               required: true,
             })}
           />
-          {errors.passwordSignup?.message && (
-            <span className='text-lg font-semibold text-red-700'>
-              Password needs to be at least 8 characters long
-            </span>
+          {errors.email?.message && (
+            <Text variant='danger'>Email or password does not match</Text>
           )}
         </FormRow>
-        <FormRow id='passwordConfirm' label='CONFIRM PASSWORD'>
+        <FormRow label='CONFIRM PASSWORD' id='PASSWORDCONFIRM'>
           <input
-            type='password'
+            className='rounded-sm px-3 text-dark-blue'
+            type='text'
             id='passwordConfirm'
-            className='text-dark-green  rounded-sm px-6 py-3 shadow-md'
             {...register('passwordConfirm', {
               required: true,
             })}
           />
-          {errors.passwordConfirm?.message && (
-            <span className='text-lg font-semibold text-red-700'>
-              Passwords need to match
-            </span>
+          {errors.email?.message && (
+            <Text variant='danger'>Email or password does not match</Text>
           )}
         </FormRow>
+
         <FormRow>
-          <Button variant='primary' size='lg' onClick={onSubmit}>
+          <Button
+            // disabled={login.isLoading}
+            variant='green'
+            size='lg'
+            onClick={onSubmit}
+          >
             REGISTER
           </Button>
         </FormRow>
       </form>
     </>
   );
-}
+};
