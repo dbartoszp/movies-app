@@ -1,15 +1,18 @@
-import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
+import '../globals.css';
+
+import { Text } from '@/modules/Text/Text';
+import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
+import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';
-import { NextResponse } from 'next/server';
 
-export async function GET(request: Request) {
-	const requestUrl = new URL(request.url);
-	const code = requestUrl.searchParams.get('code');
+export default async function Unauthenticated() {
+	const supabase = createServerComponentClient({ cookies });
+	const {
+		data: { session },
+	} = await supabase.auth.getSession();
 
-	if (code) {
-		const supabase = createRouteHandlerClient({ cookies });
-		await supabase.auth.exchangeCodeForSession(code);
+	if (session) {
+		redirect('/');
 	}
-
-	return NextResponse.redirect(requestUrl.origin);
+	return <Text>Please log in before performing that action!</Text>;
 }
