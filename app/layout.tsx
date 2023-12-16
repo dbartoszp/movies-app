@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import { Header } from '@/modules/Header/Header';
 import { Footer } from '@/modules/Footer/Footer';
 import { ReactQueryProvider } from './ReactQueryProvider';
+import { Toaster } from 'react-hot-toast';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,6 +24,26 @@ export default function RootLayout({
 					<Header />
 					{children}
 					<Footer />
+					<Toaster
+						position="top-center"
+						gutter={12}
+						containerStyle={{ margin: '8px' }}
+						toastOptions={{
+							success: {
+								duration: 2000,
+							},
+							error: {
+								duration: 5000,
+							},
+							style: {
+								fontSize: '16px',
+								maxWidth: '500px',
+								padding: '16px 24px',
+								backgroundColor: '#dedede',
+								color: 'var(--dark-blue)',
+							},
+						}}
+					/>
 				</ReactQueryProvider>
 			</body>
 		</html>
