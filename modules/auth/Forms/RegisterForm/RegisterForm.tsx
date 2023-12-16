@@ -1,19 +1,35 @@
 'use client';
-import { useForm } from 'react-hook-form';
+import * as z from 'zod';
+import { RegisterFormSchema } from './RegisterForm.schema';
+import { zodResolver } from '@hookform/resolvers/zod';
+
+import { Button } from '../../../ui/Button/Button';
 import { FormRow } from '../FormRow/FormRow';
 import { Text } from '@/modules/Text/Text';
-import { Button } from '@/modules/ui/Button/Button';
 
+import { useSignup } from '../../user/hooks/useSignup/useSignup';
+import { useForm } from 'react-hook-form';
+
+type FormValues = z.infer<typeof RegisterFormSchema>;
 export const RegisterForm = () => {
+	const signup = useSignup();
+
 	const {
 		register,
 		formState: { errors },
 		handleSubmit,
-	} = useForm();
+	} = useForm<FormValues>({ resolver: zodResolver(RegisterFormSchema) });
 
-	const onSubmit = () => {
-		console.log('submitted');
-	};
+	const onSubmit = handleSubmit(
+		({ firstName, lastName, passwordSignup, emailSignup }) => {
+			signup.mutate({
+				firstName,
+				lastName,
+				password: passwordSignup,
+				email: emailSignup,
+			});
+		}
+	);
 
 	return (
 		<>
@@ -28,7 +44,7 @@ export const RegisterForm = () => {
 							required: true,
 						})}
 					/>
-					{errors.email?.message && (
+					{errors.firstName?.message && (
 						<Text variant="danger">
 							Email or password does not match
 						</Text>
@@ -43,7 +59,7 @@ export const RegisterForm = () => {
 							required: true,
 						})}
 					/>
-					{errors.email?.message && (
+					{errors.lastName?.message && (
 						<Text variant="danger">
 							Email or password does not match
 						</Text>
@@ -58,7 +74,7 @@ export const RegisterForm = () => {
 							required: true,
 						})}
 					/>
-					{errors.email?.message && (
+					{errors.emailSignup?.message && (
 						<Text variant="danger">
 							Email or password does not match
 						</Text>
@@ -73,7 +89,7 @@ export const RegisterForm = () => {
 							required: true,
 						})}
 					/>
-					{errors.email?.message && (
+					{errors.passwordSignup?.message && (
 						<Text variant="danger">
 							Email or password does not match
 						</Text>
@@ -88,7 +104,7 @@ export const RegisterForm = () => {
 							required: true,
 						})}
 					/>
-					{errors.email?.message && (
+					{errors.passwordConfirm?.message && (
 						<Text variant="danger">
 							Email or password does not match
 						</Text>
