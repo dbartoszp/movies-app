@@ -26,7 +26,7 @@ export const MovieMainInfo = ({ movie }: MovieMainInfoProps) => {
 					<Link variant="green" size="sm" href={movie.trailer}>
 						Watch the trailer
 					</Link>
-					<Text>{movie.length} mins</Text>
+					<Text variant="subtitle">{movie.length} mins</Text>
 				</div>
 			</div>
 		</div>
