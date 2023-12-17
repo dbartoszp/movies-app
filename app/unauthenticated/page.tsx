@@ -1,9 +1,9 @@
 import '../globals.css';
 
-import { Text } from '@/modules/Text/Text';
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';
+import { UnauthorizedBox } from '@/modules/UnauthorizedBox/UnauthorizedBox';
 
 export default async function Unauthenticated() {
 	const supabase = createServerComponentClient({ cookies });
@@ -14,5 +14,5 @@ export default async function Unauthenticated() {
 	if (session) {
 		redirect('/');
 	}
-	return <Text>Please log in before performing that action!</Text>;
+	return <UnauthorizedBox />;
 }

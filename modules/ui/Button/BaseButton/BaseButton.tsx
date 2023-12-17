@@ -41,7 +41,7 @@ const sizes: Sizes = {
 const variants: ClassNames = {
 	primary: 'bg-dark-blue enabled:hover:bg-light-blue',
 	secondary: 'enabled:hover:bg-light-blue-lighter bg-light-blue',
-	link: 'bg-transparent enabled:hover:bg-transparent enabled:hover:underline',
+	link: 'bg-transparent enabled:hover:underline',
 	green: 'bg-green-700  enabled:hover:bg-green-600  ',
 	danger: 'bg-red-700 text-red-100 enabled:hover:bg-red-600  border border-red-50',
 };

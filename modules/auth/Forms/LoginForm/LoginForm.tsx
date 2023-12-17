@@ -28,7 +28,7 @@ export const LoginForm = () => {
 			<form onSubmit={onSubmit}>
 				<FormRow label="EMAIL" id="EMAIL">
 					<input
-						className="rounded-sm px-3 text-dark-blue"
+						className="rounded-sm px-3 py-1 text-dark-blue"
 						type="email"
 						id="email"
 						{...register('email', {
@@ -43,7 +43,7 @@ export const LoginForm = () => {
 				</FormRow>
 				<FormRow label="PASSWORD" id="PASSWORD">
 					<input
-						className="rounded-sm px-3 text-dark-blue"
+						className="rounded-sm px-3 py-1 text-dark-blue"
 						type="password"
 						id="password"
 						{...register('password', {
