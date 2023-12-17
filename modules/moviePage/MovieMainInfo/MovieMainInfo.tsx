@@ -15,13 +15,6 @@ type MovieMainInfoProps = {
 export const MovieMainInfo = ({ movie }: MovieMainInfoProps) => {
 	return (
 		<div className="flex md:space-x-24 md:mt-16 md:flex-row flex-col justify-center items-center space-y-4">
-			<Image
-				className="my-8 w-1/2 md:w-1/6"
-				src={movie.poster}
-				width={1000}
-				height={1463}
-				alt={`${movie.title} poster`}
-			/>
 			<div className="flex flex-col space-y-4">
 				<div>
 					<Text variant="title">{`${movie.title} (${movie.year})`}</Text>
