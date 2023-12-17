@@ -1,4 +1,5 @@
 import { MovieMainInfo } from '@/modules/moviePage/MovieMainInfo/MovieMainInfo';
+import { MovieRatings } from '@/modules/moviePage/MovieRatings/MovieRatings';
 
 const testMovieData = {
 	poster: 'https://m.media-amazon.com/images/M/MV5BZjZkNThjNTMtOGU0Ni00ZDliLThmNGUtZmMxNWQ3YzAxZTQ1XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg',
@@ -18,6 +19,11 @@ export default function MoviePage() {
 	return (
 		<div className="flex min-h-screen flex-col">
 			<MovieMainInfo movie={testMovieData} />
+			<MovieRatings
+				imdbRating={testMovieData.imdbRating}
+				moviesappRating={testMovieData.moviesappRating}
+				moviesappReviewCount={testMovieData.moviesappReviewCount}
+			/>
 		</div>
 	);
 }
