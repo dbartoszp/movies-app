@@ -1,6 +1,5 @@
 import { Text } from '@/modules/Text/Text';
 import { Link } from '@/modules/ui/Button/Link';
-import Image from 'next/image';
 import React from 'react';
 
 type MovieMainInfoProps = {
