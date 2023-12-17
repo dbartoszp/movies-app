@@ -1,4 +1,3 @@
-import '../globals.css';
 import { LoginForm } from '@/modules/auth/Forms/LoginForm/LoginForm';
 import { Text } from '@/modules/Text/Text';
 import { RegisterForm } from '@/modules/auth/Forms/RegisterForm/RegisterForm';
