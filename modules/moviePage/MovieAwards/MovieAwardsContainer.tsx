@@ -1,24 +1,19 @@
 import { SingleMovieAward } from './SingleMovieAward/SingleMovieAward';
 
 type Award = {
-	title: string;
-	for: string;
-	image: string;
+  title: string;
+  for: string;
+  image: string;
 };
 
 type Awards = {
-	awards: Award[];
+  awards: Award[];
 };
 
-export const MovieAwardsContainer = ({ awards }: Awards) => {
-	return (
-		<>
-			{awards.map((award) => {
-				<SingleMovieAward
-					award={award}
-					key={award.title + award.for}
-				/>;
-			})}
-		</>
-	);
+type AwardsString = {
+  awards: string;
+};
+
+export const MovieAwardsContainer = ({ awards }: AwardsString) => {
+  return <SingleMovieAward award={awards} />;
 };

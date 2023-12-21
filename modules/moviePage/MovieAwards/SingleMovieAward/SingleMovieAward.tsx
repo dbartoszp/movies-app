@@ -1,13 +1,17 @@
 type Award = {
-	title: string;
-	for: string;
-	image: string;
+  title: string;
+  for: string;
+  image: string;
 };
 
 type SingleMovieAwardProps = {
-	award: Award;
+  award: Award;
 };
 
-export const SingleMovieAward = ({ award }: SingleMovieAwardProps) => {
-	return <div>{award.title}</div>;
+type SingleMovieAwardStringProps = {
+  award: string;
+};
+
+export const SingleMovieAward = ({ award }: SingleMovieAwardStringProps) => {
+  return <div>{award}</div>;
 };
