@@ -9,12 +9,13 @@ import { FullCastContainer } from '@/modules/moviePage/FullCastContainer/FullCas
 import { MovieAwardsContainer } from '@/modules/moviePage/MovieAwards/MovieAwardsContainer';
 import { Text } from '@/modules/Text/Text';
 import { MovieImage } from '@/modules/moviePage/MovieImage/MovieImage';
+import { MoviePageSkeleton } from '@/modules/moviePage/MoviePageSkeleton/MoviePageSkeleton';
 
 export default function MoviePage({ params }: { params: { movieId: string } }) {
   const movie = useGetMovieById(params.movieId);
 
   if (movie.isLoading) {
-    return <Text variant='red'>TODO skeleton</Text>;
+    return <MoviePageSkeleton />;
   }
   if (!movie.isSuccess) {
     console.log(movie.error);
