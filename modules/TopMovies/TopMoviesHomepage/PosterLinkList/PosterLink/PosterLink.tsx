@@ -15,7 +15,6 @@ export const PosterLink = ({ movie }: PosterLinkProps) => {
   return (
     <Link href={`/movie/${movie.id}`}>
       <Image
-        className='w-3/4'
         alt={`poster of ${movie.title}`}
         src={movie.image}
         height={2222}
