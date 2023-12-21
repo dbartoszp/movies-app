@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useGetAllPopularMoviesReturnSchema } from '../useGetAllPopularMovies.schema';
+import { useGetAllPopularMoviesReturnSchema } from '../schemas/useGetAllPopularMovies.schema';
 
 const POPULAR_MOVIES_URL = 'https://imdb-api.com/en/API/MostPopularMovies/';
 const IMDB_API_KEY = 'k_2x4eak3e';
