@@ -30,10 +30,9 @@ export const TopMoviesHomepage = () => {
   }
 
   return (
-    <div>
-      {/* <Button onClick={handleClick}>fetch</Button> */}
+    <div className='my-10'>
+      <Text variant='title'>Top movies right now:</Text>
       <PosterLinkList IDPosters={popularMovies.data} />
-      <PosterLink movie={testMovie} />
     </div>
   );
 };

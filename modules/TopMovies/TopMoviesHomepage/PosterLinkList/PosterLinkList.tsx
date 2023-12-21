@@ -13,9 +13,9 @@ type PosterLinkListProps = {
 
 export const PosterLinkList = ({ IDPosters }: PosterLinkListProps) => {
   return (
-    <div>
+    <div className='grid grid-cols-2 gap-4 p-4'>
       {IDPosters.map((movie) => (
-        <PosterLink movie={movie} key={movie.id} />
+        <PosterLink key={movie.id} movie={movie} />
       ))}
     </div>
   );
