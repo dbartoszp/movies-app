@@ -15,12 +15,18 @@ type SimilarMoviesProps = {
 };
 
 export const SimilarMovies = ({ similars }: SimilarMoviesProps) => {
+  const slicedSimilars = similars.slice(0, SIMILAR_MOVIES_COUNT);
+
   return (
-    <div>
-      <Text variant='subtitle'>You might also like...</Text>
-      {similars.map((movie) => (
-        <SingleSimilarMovie key={movie.id} movie={movie} />
-      ))}
-    </div>
+    <>
+      <div className='flex items-center justify-center bg-dark-blue py-1'>
+        <Text variant='subtitle'>You might also like...</Text>
+      </div>
+      <div className='grid grid-cols-2 gap-3 md:grid-cols-4'>
+        {slicedSimilars.map((movie) => (
+          <SingleSimilarMovie key={movie.id} movie={movie} />
+        ))}
+      </div>
+    </>
   );
 };
