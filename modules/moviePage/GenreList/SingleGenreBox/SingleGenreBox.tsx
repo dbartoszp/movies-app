@@ -10,5 +10,5 @@ type SingleGenreBoxProps = {
 };
 
 export const SingleGenreBox = ({ genre }: SingleGenreBoxProps) => {
-  return <Text variant='subtitle'>{genre.value}</Text>;
+  return <Text variant='green'>{genre.value}</Text>;
 };

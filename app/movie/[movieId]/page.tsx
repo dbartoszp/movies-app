@@ -10,6 +10,8 @@ import { Text } from '@/modules/Text/Text';
 import { MovieImage } from '@/modules/moviePage/MovieImage/MovieImage';
 import { MoviePageSkeleton } from '@/modules/moviePage/MoviePageSkeleton/MoviePageSkeleton';
 import { GenreList } from '@/modules/moviePage/GenreList/GenreList';
+import { BoxOffice } from '@/modules/moviePage/BoxOffice/BoxOffice';
+import { SimilarMovies } from '@/modules/moviePage/SimilarMovies/SimilarMovies';
 
 export default function MoviePage({ params }: { params: { movieId: string } }) {
   const movie = useGetMovieById(params.movieId);
@@ -32,7 +34,7 @@ export default function MoviePage({ params }: { params: { movieId: string } }) {
         <MovieMainInfo
           title={movieData.title}
           year={movieData.year}
-          directors={movieData.directors || 'Unkown'}
+          directors={movieData.directors || 'Unknown'}
           trailer={movieData.trailer}
           runtimeStr={movieData.runtimeStr || 'Unknown runtime'}
         />
@@ -46,6 +48,8 @@ export default function MoviePage({ params }: { params: { movieId: string } }) {
         />
         <FullCastContainer starList={movieData.starList} />
         <MovieAwardsContainer awards={movieData.awards || 'No awards yet'} />
+        <BoxOffice boxOffice={movieData.boxOffice} />
+        <SimilarMovies similars={movieData.similars} />
       </div>
     </div>
   );
