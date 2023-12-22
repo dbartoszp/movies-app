@@ -1,3 +1,5 @@
+import { Text } from '@/modules/Text/Text';
+
 type Award = {
   title: string;
   for: string;
@@ -13,5 +15,5 @@ type SingleMovieAwardStringProps = {
 };
 
 export const SingleMovieAward = ({ award }: SingleMovieAwardStringProps) => {
-  return <div>{award}</div>;
+  return <Text variant='subtitle'>{award}</Text>;
 };

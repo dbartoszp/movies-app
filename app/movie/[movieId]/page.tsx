@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { useGetMovieById } from '@/modules/movies/useGetMovieById/useGetMovieById';
 import { MovieDescription } from '@/modules/moviePage/MovieDescription/MovieDescription';
 import { MovieMainInfo } from '@/modules/moviePage/MovieMainInfo/MovieMainInfo';
@@ -10,6 +9,7 @@ import { MovieAwardsContainer } from '@/modules/moviePage/MovieAwards/MovieAward
 import { Text } from '@/modules/Text/Text';
 import { MovieImage } from '@/modules/moviePage/MovieImage/MovieImage';
 import { MoviePageSkeleton } from '@/modules/moviePage/MoviePageSkeleton/MoviePageSkeleton';
+import { GenreList } from '@/modules/moviePage/GenreList/GenreList';
 
 export default function MoviePage({ params }: { params: { movieId: string } }) {
   const movie = useGetMovieById(params.movieId);
@@ -19,7 +19,7 @@ export default function MoviePage({ params }: { params: { movieId: string } }) {
   }
   if (!movie.isSuccess) {
     console.log(movie.error);
-    return <Text variant='red'>TODO error message</Text>;
+    return <Text variant='danger'>TODO error message</Text>;
   }
 
   const movieData = movie.data;
@@ -36,6 +36,7 @@ export default function MoviePage({ params }: { params: { movieId: string } }) {
           trailer={movieData.trailer}
           runtimeStr={movieData.runtimeStr || 'Unknown runtime'}
         />
+        <GenreList genreList={movieData.genreList} />
         <MovieDescription description={movieData.plot} />
         <MovieRatings
           imDbRating={movieData.imDbRating || 'Not yet rated'}
