@@ -15,5 +15,5 @@ type SingleMovieAwardStringProps = {
 };
 
 export const SingleMovieAward = ({ award }: SingleMovieAwardStringProps) => {
-  return <Text variant='subtitle'>{award}</Text>;
+  return <Text variant='green'>{award}</Text>;
 };

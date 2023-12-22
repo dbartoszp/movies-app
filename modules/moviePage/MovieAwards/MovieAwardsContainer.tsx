@@ -15,5 +15,9 @@ type AwardsString = {
 };
 
 export const MovieAwardsContainer = ({ awards }: AwardsString) => {
-  return <SingleMovieAward award={awards} />;
+  return (
+    <div className='flex items-center justify-center'>
+      <SingleMovieAward award={awards} />
+    </div>
+  );
 };
