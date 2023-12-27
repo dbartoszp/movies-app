@@ -16,8 +16,8 @@ type ActorKnownForProps = {
 export const ActorKnownFor = ({ knownFor }: ActorKnownForProps) => {
 	return (
 		<div className="text-center my-6 pt-6">
-			<div className="md:bg-inherit bg-dark-blue">
-				<Text variant="subtitle">KNOWN FOR:</Text>
+			<div>
+				<Text variant="subtitleXL">Known for:</Text>
 			</div>
 			<div className="grid grid-cols-2 gap-4 p-4 md:grid-cols-4">
 				{knownFor.map((movie) => (
