@@ -24,7 +24,7 @@ export const MovieRatings = ({
 			</div>
 			<div className="mb-3 flex justify-around">
 				<Text variant="description">imDB rating votes:</Text>
-				<Text variant="green">{imDbRatingVotes}</Text>
+				<Text variant="green">{imDbRatingVotes || 'No votes yet'}</Text>
 			</div>
 			{/* <div className='flex justify-between'>
         <Text variant='description'>moviesApp rating:</Text>

@@ -5,11 +5,12 @@ import { useGetActorById } from '@/modules/actors/useGetActorById/useGetActorByI
 import { ActorImage } from '@/modules/actorPage/ActorImage/ActorImage';
 import { ActorKnownFor } from '@/modules/actorPage/ActorKnownFor/ActorKnownFor';
 import { ActorMainInfo } from '@/modules/actorPage/ActorMainInfo/ActorMainInfo';
+import { ActorPageSkeleton } from '@/modules/actorPage/ActorPageSkeleton/ActorPageSkeleton';
 
 export default function ActorPage({ params }: { params: { actorId: string } }) {
 	const actor = useGetActorById(params.actorId);
 	if (actor.isLoading) {
-		return <Text variant="danger">TODO skeleton</Text>;
+		return <ActorPageSkeleton />;
 	}
 	if (!actor.isSuccess) {
 		console.log(actor.error);
