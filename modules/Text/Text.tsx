@@ -14,6 +14,7 @@ const variants: ClassNames = {
 	default: 'text-md',
 	title: 'text-lg md:text-3xl  tracking-widest font-light',
 	subtitle: 'text-md tracking-wide text-light-blue',
+	subtitleXL: 'text-xl tracking-wide text-light-blue',
 	description: 'text-md text-light-blue-lighter',
 	mainInfo: 'text-md font-normal',
 	danger: 'text-lg text-red-700',

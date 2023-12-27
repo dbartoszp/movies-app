@@ -21,7 +21,7 @@ export const ActorMainInfo = ({
 	role,
 }: ActorMainInfoProps) => {
 	return (
-		<div className="flex flex-col items-center justify-center my-6">
+		<div className="flex flex-col md:items-start md:justify-between items-center justify-center my-6">
 			<Text variant="title">{name}</Text>
 			<Text variant="green">{role}</Text>
 			<ActorDatesBox birthDate={birthDate} deathDate={deathDate} />

@@ -7,7 +7,7 @@ type ActorImageProps = {
 
 export const ActorImage = ({ image, name }: ActorImageProps) => {
 	return (
-		<div className="mx-auto mb-8 w-2/5 md:mb-0 md:w-1/5">
+		<div className="mb-8 w-2/5 md:mb-0 md:w-[30%]">
 			<Image
 				src={image}
 				width={300}

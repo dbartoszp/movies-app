@@ -1,9 +1,10 @@
 'use client';
+
 import { Text } from '@/modules/Text/Text';
+import { useGetActorById } from '@/modules/actors/useGetActorById/useGetActorById';
 import { ActorImage } from '@/modules/actorPage/ActorImage/ActorImage';
 import { ActorKnownFor } from '@/modules/actorPage/ActorKnownFor/ActorKnownFor';
 import { ActorMainInfo } from '@/modules/actorPage/ActorMainInfo/ActorMainInfo';
-import { useGetActorById } from '@/modules/actors/useGetActorById/useGetActorById';
 
 export default function ActorPage({ params }: { params: { actorId: string } }) {
 	const actor = useGetActorById(params.actorId);
@@ -18,18 +19,20 @@ export default function ActorPage({ params }: { params: { actorId: string } }) {
 	const actorData = actor.data;
 
 	return (
-		<main>
+		<main className="flex min-h-screen md:items-center md:justify-around md:mt-20 md:flex-row">
 			<ActorImage name={actorData.name} image={actorData.image} />
-			<ActorMainInfo
-				name={actorData.name}
-				role={actorData.role}
-				summary={actorData.summary}
-				birthDate={actorData.birthDate}
-				deathDate={actorData.deathDate}
-				awards={actorData.awards}
-				height={actorData.height}
-			/>
-			<ActorKnownFor knownFor={actorData.knownFor || []} />
+			<div className="flex w-full flex-col space-y-4 md:w-1/2">
+				<ActorMainInfo
+					name={actorData.name}
+					role={actorData.role}
+					summary={actorData.summary}
+					birthDate={actorData.birthDate}
+					deathDate={actorData.deathDate}
+					awards={actorData.awards}
+					height={actorData.height}
+				/>
+				<ActorKnownFor knownFor={actorData.knownFor || []} />
+			</div>
 		</main>
 	);
 }
