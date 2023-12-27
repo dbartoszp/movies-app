@@ -22,7 +22,7 @@ export const SimilarMovies = ({ similars }: SimilarMoviesProps) => {
 			<div className="flex items-center justify-center md:bg-inherit bg-dark-blue py-1">
 				<Text variant="subtitle">You might also like...</Text>
 			</div>
-			<div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+			<div className="grid grid-cols-2 gap-4 p-4 md:grid-cols-4">
 				{slicedSimilars.map((movie) => (
 					<SingleSimilarMovie key={movie.id} movie={movie} />
 				))}
