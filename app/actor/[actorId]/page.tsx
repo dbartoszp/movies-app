@@ -1,6 +1,7 @@
 'use client';
 import { Text } from '@/modules/Text/Text';
 import { ActorImage } from '@/modules/actorPage/ActorImage/ActorImage';
+import { ActorMainInfo } from '@/modules/actorPage/ActorMainInfo/ActorMainInfo';
 import { useGetActorById } from '@/modules/actors/useGetActorById/useGetActorById';
 
 export default function ActorPage({ params }: { params: { actorId: string } }) {
@@ -18,7 +19,15 @@ export default function ActorPage({ params }: { params: { actorId: string } }) {
 	return (
 		<main>
 			<ActorImage name={actorData.name} image={actorData.image} />
-			<Text>ActorPage</Text>
+			<ActorMainInfo
+				name={actorData.name}
+				role={actorData.role}
+				summary={actorData.summary}
+				birthDate={actorData.birthDate}
+				deathDate={actorData.deathDate}
+				awards={actorData.awards}
+				height={actorData.height}
+			/>
 		</main>
 	);
 }
