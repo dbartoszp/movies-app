@@ -2,7 +2,7 @@ import { Text } from '@/modules/Text/Text';
 
 type ActorDatesBoxProps = {
 	birthDate: string;
-	deathDate?: string;
+	deathDate?: string | null;
 };
 
 export const ActorDatesBox = ({ birthDate, deathDate }: ActorDatesBoxProps) => {
