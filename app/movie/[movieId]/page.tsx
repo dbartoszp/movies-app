@@ -27,10 +27,10 @@ export default function MoviePage({ params }: { params: { movieId: string } }) {
 	const movieData = movie.data;
 
 	return (
-		<div className="flex min-h-screen flex-col items-center justify-center md:mt-36 md:flex-row">
+		<main className="flex min-h-screen flex-col items-center justify-center md:items-start md:justify-around md:mt-36 md:flex-row">
 			<MovieImage image={movieData.image} title={movieData.title} />
 
-			<div className="flex w-full flex-col space-y-4 md:w-1/2 md:items-center">
+			<div className="flex w-full flex-col space-y-4 md:w-1/2 ">
 				<MovieMainInfo
 					title={movieData.title}
 					year={movieData.year}
@@ -55,6 +55,6 @@ export default function MoviePage({ params }: { params: { movieId: string } }) {
 				<BoxOffice boxOffice={movieData.boxOffice} />
 				<SimilarMovies similars={movieData.similars} />
 			</div>
-		</div>
+		</main>
 	);
 }
