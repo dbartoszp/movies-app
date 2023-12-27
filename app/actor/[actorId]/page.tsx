@@ -1,6 +1,7 @@
 'use client';
 import { Text } from '@/modules/Text/Text';
 import { ActorImage } from '@/modules/actorPage/ActorImage/ActorImage';
+import { ActorKnownFor } from '@/modules/actorPage/ActorKnownFor/ActorKnownFor';
 import { ActorMainInfo } from '@/modules/actorPage/ActorMainInfo/ActorMainInfo';
 import { useGetActorById } from '@/modules/actors/useGetActorById/useGetActorById';
 
@@ -28,6 +29,7 @@ export default function ActorPage({ params }: { params: { actorId: string } }) {
 				awards={actorData.awards}
 				height={actorData.height}
 			/>
+			<ActorKnownFor knownFor={actorData.knownFor || []} />
 		</main>
 	);
 }
