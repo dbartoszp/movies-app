@@ -7,7 +7,7 @@ type MovieImageProps = {
 
 export const MovieImage = ({ image, title }: MovieImageProps) => {
 	return (
-		<div className="mb-8 w-full md:mb-0 md:w-[30%]">
+		<div className="mx-auto mb-8 w-full md:mb-0 md:w-[30%]">
 			<Image
 				src={image}
 				width={600}

@@ -19,7 +19,7 @@ export default function ActorPage({ params }: { params: { actorId: string } }) {
 	const actorData = actor.data;
 
 	return (
-		<main className="flex min-h-screen md:items-center md:justify-around md:mt-20 md:flex-row">
+		<main className="md:flex md:min-h-screen md:items-center md:justify-around md:mt-20 md:flex-row">
 			<ActorImage name={actorData.name} image={actorData.image} />
 			<div className="flex w-full flex-col space-y-4 md:w-1/2">
 				<ActorMainInfo
