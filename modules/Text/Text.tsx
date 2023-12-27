@@ -17,7 +17,7 @@ const variants: ClassNames = {
 	subtitleXL: 'text-xl tracking-wide text-light-blue',
 	description: 'text-md text-light-blue-lighter',
 	mainInfo: 'text-md font-normal',
-	danger: 'text-lg text-red-700',
+	danger: 'text-lg text-red-500',
 	green: 'text-md text-green-500',
 };
 

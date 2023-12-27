@@ -12,6 +12,7 @@ import { MovieImage } from '@/modules/moviePage/MovieImage/MovieImage';
 import { GenreList } from '@/modules/moviePage/GenreList/GenreList';
 import { BoxOffice } from '@/modules/moviePage/BoxOffice/BoxOffice';
 import { SimilarMovies } from '@/modules/moviePage/SimilarMovies/SimilarMovies';
+import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 
 export default function MoviePage({ params }: { params: { movieId: string } }) {
 	const movie = useGetMovieById(params.movieId);
@@ -21,7 +22,7 @@ export default function MoviePage({ params }: { params: { movieId: string } }) {
 	}
 	if (!movie.isSuccess) {
 		console.log(movie.error);
-		return <Text variant="danger">TODO error message</Text>;
+		return <ErrorMessage />;
 	}
 
 	const movieData = movie.data;
