@@ -14,43 +14,47 @@ import { BoxOffice } from '@/modules/moviePage/BoxOffice/BoxOffice';
 import { SimilarMovies } from '@/modules/moviePage/SimilarMovies/SimilarMovies';
 
 export default function MoviePage({ params }: { params: { movieId: string } }) {
-  const movie = useGetMovieById(params.movieId);
+	const movie = useGetMovieById(params.movieId);
 
-  if (movie.isLoading) {
-    return <MoviePageSkeleton />;
-  }
-  if (!movie.isSuccess) {
-    console.log(movie.error);
-    return <Text variant='danger'>TODO error message</Text>;
-  }
+	if (movie.isLoading) {
+		return <MoviePageSkeleton />;
+	}
+	if (!movie.isSuccess) {
+		console.log(movie.error);
+		return <Text variant="danger">TODO error message</Text>;
+	}
 
-  const movieData = movie.data;
+	const movieData = movie.data;
 
-  return (
-    <div className='flex min-h-screen flex-col items-center justify-center md:mt-36 md:flex-row'>
-      <MovieImage image={movieData.image} title={movieData.title} />
+	return (
+		<div className="flex min-h-screen flex-col items-center justify-center md:mt-36 md:flex-row">
+			<MovieImage image={movieData.image} title={movieData.title} />
 
-      <div className='flex w-full flex-col space-y-4 md:w-1/2 md:items-center'>
-        <MovieMainInfo
-          title={movieData.title}
-          year={movieData.year}
-          directors={movieData.directors || 'Unknown'}
-          trailer={movieData.trailer}
-          runtimeStr={movieData.runtimeStr || 'Unknown runtime'}
-        />
-        <GenreList genreList={movieData.genreList} />
-        <MovieDescription description={movieData.plot} />
-        <MovieRatings
-          imDbRating={movieData.imDbRating || 'Not yet rated'}
-          imDbRatingVotes={movieData.imDbRatingVotes || 'Not yet rated'}
-          // moviesappRating={movieData.moviesappRating}
-          // moviesappReviewCount={movieData.moviesappReviewCount}
-        />
-        <FullCastContainer starList={movieData.starList} />
-        <MovieAwardsContainer awards={movieData.awards || 'No awards yet'} />
-        <BoxOffice boxOffice={movieData.boxOffice} />
-        <SimilarMovies similars={movieData.similars} />
-      </div>
-    </div>
-  );
+			<div className="flex w-full flex-col space-y-4 md:w-1/2 md:items-center">
+				<MovieMainInfo
+					title={movieData.title}
+					year={movieData.year}
+					directors={movieData.directors || 'Unknown'}
+					trailer={movieData.trailer}
+					runtimeStr={movieData.runtimeStr || 'Unknown runtime'}
+				/>
+				<GenreList genreList={movieData.genreList} />
+				<MovieAwardsContainer
+					awards={movieData.awards || 'No awards yet'}
+				/>
+				<MovieDescription description={movieData.plot} />
+				<MovieRatings
+					imDbRating={movieData.imDbRating || 'Not yet rated'}
+					imDbRatingVotes={
+						movieData.imDbRatingVotes || 'Not yet rated'
+					}
+					// moviesappRating={movieData.moviesappRating}
+					// moviesappReviewCount={movieData.moviesappReviewCount}
+				/>
+				<FullCastContainer starList={movieData.starList} />
+				<BoxOffice boxOffice={movieData.boxOffice} />
+				<SimilarMovies similars={movieData.similars} />
+			</div>
+		</div>
+	);
 }

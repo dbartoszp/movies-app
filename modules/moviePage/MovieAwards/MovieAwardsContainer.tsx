@@ -1,23 +1,23 @@
 import { SingleMovieAward } from './SingleMovieAward/SingleMovieAward';
 
 type Award = {
-  title: string;
-  for: string;
-  image: string;
+	title: string;
+	for: string;
+	image: string;
 };
 
 type Awards = {
-  awards: Award[];
+	awards: Award[];
 };
 
 type AwardsString = {
-  awards: string;
+	awards: string;
 };
 
 export const MovieAwardsContainer = ({ awards }: AwardsString) => {
-  return (
-    <div className='flex items-center justify-center'>
-      <SingleMovieAward award={awards} />
-    </div>
-  );
+	return (
+		<div className="flex items-center justify-center px-2">
+			<SingleMovieAward award={awards} />
+		</div>
+	);
 };
