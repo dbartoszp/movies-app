@@ -2,14 +2,27 @@
 import { Text } from '@/modules/Text/Text';
 import { PosterLinkList } from './PosterLinkList/PosterLinkList';
 import { useGetLimitedPopularMoviesIDPoster } from '@/modules/movies/useGetLimitedPopularMoviesIDPoster/useGetLimitedPopularMoviesIDPoster';
+import { PosterLinkListSkeleton } from './PosterLinkList/PosterLinkListSkeleton/PosterLinkListSkeleton';
+import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 
 export const TopMoviesHomepage = () => {
   const popularMovies = useGetLimitedPopularMoviesIDPoster();
+
   if (popularMovies.isLoading) {
-    return <Text variant='red'>TODO skeleton</Text>;
+    return (
+      <div className='mx-4 my-10'>
+        <Text variant='title'>Top movies right now:</Text>
+        <PosterLinkListSkeleton />
+      </div>
+    );
   }
   if (!popularMovies.isSuccess) {
-    return <Text variant='red'>TODO error message</Text>;
+    return (
+      <div className='mx-4 my-10'>
+        <Text variant='title'>Top movies right now:</Text>
+        <ErrorMessage />
+      </div>
+    );
   }
 
   return (
