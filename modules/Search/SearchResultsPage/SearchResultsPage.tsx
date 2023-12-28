@@ -6,6 +6,7 @@ import { useGetMoviesByTitle } from '@/modules/movies/useGetMoviesByTitle/useGet
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 import { useSearchParams } from 'next/navigation';
 import { SearchResultsPageSkeleton } from './SearchResultsPageSkeleton/SearchResultsPageSkeleton';
+import { SearchResultsPageEmptyQuery } from './SearchResultsPageEmptyQuery/SearchResultsPageEmptyQuery';
 
 export const SearchResultsPage = () => {
   const searchParams = useSearchParams();
@@ -15,6 +16,7 @@ export const SearchResultsPage = () => {
 
   const movies = useGetMoviesByTitle(titleQuery);
 
+  if (titleQuery === '') return <SearchResultsPageEmptyQuery />;
   if (movies.isLoading) return <SearchResultsPageSkeleton />;
   if (!movies.isSuccess) return <ErrorMessage />;
 
