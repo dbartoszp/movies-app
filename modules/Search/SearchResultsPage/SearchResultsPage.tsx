@@ -5,6 +5,7 @@ import { MoviesList } from '@/modules/movies/MoviesList/MoviesList';
 import { useGetMoviesByTitle } from '@/modules/movies/useGetMoviesByTitle/useGetMoviesByTitle';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 import { useSearchParams } from 'next/navigation';
+import { SearchResultsPageSkeleton } from './SearchResultsPageSkeleton/SearchResultsPageSkeleton';
 
 export const SearchResultsPage = () => {
   const searchParams = useSearchParams();
@@ -14,11 +15,11 @@ export const SearchResultsPage = () => {
 
   const movies = useGetMoviesByTitle(titleQuery);
 
-  if (movies.isLoading) return <Text>TODO skeleton</Text>;
+  if (movies.isLoading) return <SearchResultsPageSkeleton />;
   if (!movies.isSuccess) return <ErrorMessage />;
 
   return (
-    <div>
+    <div className='bg-dark-blue md:mx-24 md:my-12 md:p-6'>
       <MoviesList movies={movies.data.results} />
     </div>
   );
