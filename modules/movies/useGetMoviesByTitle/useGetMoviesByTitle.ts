@@ -3,7 +3,7 @@ import { getMoviesByTitle } from './apiUseGetMoviesByTitle';
 
 export const useGetMoviesByTitle = (title: string) => {
   return useQuery({
-    queryKey: ['movieSearch'],
+    queryKey: ['movieSearch', title],
     queryFn: () => getMoviesByTitle(title),
     refetchOnWindowFocus: true,
   });

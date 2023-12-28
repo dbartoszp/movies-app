@@ -1,3 +1,5 @@
+import { Text } from '@/modules/Text/Text';
+
 type Movie = {
   id: string;
   resultType: 'Movie';
@@ -10,5 +12,11 @@ type MoviesListProps = {
 };
 
 export const MoviesList = ({ movies }: MoviesListProps) => {
-  return <div>MoviesList</div>;
+  return (
+    <div>
+      {movies.map((movie) => (
+        <Text key={movie.id}>{movie.title}</Text>
+      ))}
+    </div>
+  );
 };
