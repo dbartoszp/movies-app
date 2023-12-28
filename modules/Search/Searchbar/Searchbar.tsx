@@ -15,7 +15,7 @@ export const Searchbar = () => {
   return (
     <div className='t-24 mb-6 flex flex-col items-center justify-center pt-16 text-left'>
       <form onSubmit={onSubmit} className='flex flex-col'>
-        <FormRow id='searchResults' label='SEARCH A MOVIE'>
+        <FormRow id='searchResults' label='INPUT A MOVIE NAME'>
           <input
             className='rounded-sm px-6 py-3 text-dark-blue shadow-md'
             type='text'

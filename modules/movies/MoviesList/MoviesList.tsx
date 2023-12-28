@@ -13,9 +13,13 @@ type MoviesListProps = {
 };
 
 export const MoviesList = ({ movies }: MoviesListProps) => {
+  const validMovies = movies.filter(
+    (movie) => movie.id && movie.image && movie.title
+  );
+
   return (
     <div className='grid grid-cols-3 gap-4 p-4 md:grid-cols-6'>
-      {movies.map((movie) => {
+      {validMovies.map((movie) => {
         const posterLinkMovie = {
           id: movie.id,
           image: movie.image,
@@ -24,7 +28,6 @@ export const MoviesList = ({ movies }: MoviesListProps) => {
         return (
           <div className='text-center' key={movie.id}>
             <PosterLink movie={posterLinkMovie} />
-            <Text>{movie.title}</Text>
           </div>
         );
       })}

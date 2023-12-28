@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Link } from '../../../../ui/Button/Link';
+import { Text } from '@/modules/Text/Text';
 
 type Movie = {
   id: string;
@@ -12,15 +13,17 @@ type PosterLinkProps = {
 };
 
 export const PosterLink = ({ movie }: PosterLinkProps) => {
-  if (!movie.id || !movie.image || !movie.title) return;
   return (
-    <Link href={`/movie/${movie.id}`}>
-      <Image
-        alt={`poster of ${movie.title}`}
-        src={movie.image || ''}
-        height={300}
-        width={200}
-      />
-    </Link>
+    <>
+      <Link href={`/movie/${movie.id}`}>
+        <Image
+          alt={`poster of ${movie.title}`}
+          src={movie.image || ''}
+          height={300}
+          width={200}
+        />
+      </Link>
+      <Text>{movie.title}</Text>
+    </>
   );
 };
