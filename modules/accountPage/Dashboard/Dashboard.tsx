@@ -1,6 +1,7 @@
 'use client';
 
 import { useCreateMovieReview } from '@/modules/reviews/hooks/useCreateMovieReview/useCreateMovieReview';
+import { useDeleteMovieReview } from '@/modules/reviews/hooks/useDeleteMovieReview/useDeleteMovieReview';
 import { Button } from '@/modules/ui/Button/Button';
 
 const testMovieReview = {
@@ -11,7 +12,8 @@ const testMovieReview = {
 
 export const Dashboard = () => {
   const createMovieReview = useCreateMovieReview();
-  const handleClick = () => {
+  const deleteMovieReview = useDeleteMovieReview();
+  const handleAddReview = () => {
     createMovieReview.mutate({
       rating: testMovieReview.rating,
       movieId: testMovieReview.movieId,
@@ -19,9 +21,18 @@ export const Dashboard = () => {
     });
   };
 
+  const handleDeleteReview = () => {
+    deleteMovieReview.mutate(11);
+  };
+
   return (
     <div>
-      <Button onClick={handleClick}>testaddreview</Button>
+      <Button size='lg' variant='green' onClick={handleAddReview}>
+        test add review
+      </Button>
+      <Button size='lg' variant='danger' onClick={handleDeleteReview}>
+        test delete review
+      </Button>
     </div>
   );
 };

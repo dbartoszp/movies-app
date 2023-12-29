@@ -15,12 +15,10 @@ export const createMovieReview = async ({
   const user = await getCurrentUser();
   if (!user) return;
   const supabase = createClientComponentClient();
-  console.log(user);
-  let { data: reviewedMovie, error: reviewedMovieError } = await supabase
+  const { data: reviewedMovie } = await supabase
     .from('reviewedMovie')
     .select('id')
     .eq('movieId', movieId);
-  console.log(reviewedMovie);
 
   if (reviewedMovie?.length === 0) {
     const { error: insertError } = await supabase
