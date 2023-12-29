@@ -5,5 +5,11 @@ type CreateReviewButtonProps = {
 };
 
 export const CreateReviewButton = ({ movieId }: CreateReviewButtonProps) => {
-  return <Link href={`/reviewCreator/${movieId}`}>Review this movie</Link>;
+  return (
+    <div className='mx-auto'>
+      <Link variant='green' size='md' href={`/reviewCreator/${movieId}`}>
+        Review this movie
+      </Link>
+    </div>
+  );
 };

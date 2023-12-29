@@ -2,7 +2,6 @@
 
 import { useGetMovieById } from '@/modules/movies/useGetMovieById/useGetMovieById';
 import { RatingButton } from '@/modules/reviewCreatorPage/RatingButton/RatingButton';
-import { ReviewSubmitted } from '@/modules/reviewCreatorPage/ReviewSubmitted/ReviewSubmitted';
 import { useCreateMovieReview } from '@/modules/reviews/hooks/useCreateMovieReview/useCreateMovieReview';
 import { Button } from '@/modules/ui/Button/Button';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
@@ -21,7 +20,6 @@ export default function ReviewCreatorPage({
   const createMovieReview = useCreateMovieReview();
   const [rating, setRating] = useState(0);
   const [writtenReview, setWrittenReview] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmitReview = () => {
     createMovieReview.mutate({
@@ -29,7 +27,6 @@ export default function ReviewCreatorPage({
       writtenReview,
       movieId: params.movieId,
     });
-    setIsSubmitted(true);
   };
 
   const handleRatingChange = (newRating: number) => {
@@ -43,8 +40,6 @@ export default function ReviewCreatorPage({
 
   if (movie.isLoading) return <Text>TODO SKELETON REVIEW CREATOR</Text>;
   if (!movie.isSuccess) return <ErrorMessage />;
-
-  if (isSubmitted) return <ReviewSubmitted />;
 
   return (
     <main className='flex flex-col space-y-6 p-6 md:mx-auto md:mt-32 md:w-1/2 md:space-y-8'>
