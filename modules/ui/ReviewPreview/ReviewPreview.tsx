@@ -23,7 +23,7 @@ export const ReviewPreview = ({
   const movie = useGetMovieById(movieId);
   const deleteReview = useDeleteMovieReview();
 
-  const handleDeleteReview = (e: MouseEvent<HTMLButtonElement>) => {
+  const handleDeleteReview = (e: MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
     deleteReview.mutate(reviewId);
   };
@@ -47,11 +47,18 @@ export const ReviewPreview = ({
             </div>
           </Link>
         </div>
-        <Button onClick={handleDeleteReview}>
-          <Text variant='danger'>
+        <div
+          onClick={handleDeleteReview}
+          className='my-auto cursor-pointer hover:bg-light-blue'
+        >
+          {/* <Text variant='danger'>
+            <span className='max-h-10'> */}
+          <span className='text-red-500'>
             <HiMiniTrash size={30} />
-          </Text>
-        </Button>
+          </span>
+          {/* </span>
+          </Text> */}
+        </div>
       </div>
     </div>
   );
