@@ -4,6 +4,7 @@ import { LogoutButton } from '@/modules/auth/LogoutButton/LogoutButton';
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';
+import { getCurrentUser } from '@/modules/users/utils/getCurrentUser/getCurrentUser';
 
 export default async function AccountPage() {
   const supabase = createServerComponentClient({ cookies });
@@ -12,7 +13,7 @@ export default async function AccountPage() {
   } = await supabase.auth.getSession();
 
   if (!session) {
-    redirect('/unauthenticated');
+    redirect('/login');
   }
 
   return (

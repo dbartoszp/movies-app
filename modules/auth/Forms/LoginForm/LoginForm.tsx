@@ -31,24 +31,23 @@ export const LoginForm = () => {
             className='rounded-sm px-3 py-1 text-dark-blue'
             type='email'
             id='email'
+            value='bitwa@gmail.com' //!! for testing purposes
             {...register('email', {
               required: true,
             })}
           />
-          {errors.email?.message && (
-            <Text variant='danger'>Email or password does not match</Text>
-          )}
         </FormRow>
         <FormRow label='PASSWORD' id='PASSWORD'>
           <input
             className='rounded-sm px-3 py-1 text-dark-blue'
             type='password'
             id='password'
+            value='Mikro123' //!! for testing purposes
             {...register('password', {
               required: true,
             })}
           />
-          {errors.email?.message && (
+          {(errors.email?.message || errors.password?.message) && (
             <Text variant='danger'>Email or password does not match</Text>
           )}
         </FormRow>

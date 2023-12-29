@@ -45,7 +45,7 @@ export const RegisterForm = () => {
             })}
           />
           {errors.firstName?.message && (
-            <Text variant='danger'>Email or password does not match</Text>
+            <Text variant='danger'>Please input a correct first name</Text>
           )}
         </FormRow>
         <FormRow label='LAST NAME' id='LASTNAME'>
@@ -58,7 +58,7 @@ export const RegisterForm = () => {
             })}
           />
           {errors.lastName?.message && (
-            <Text variant='danger'>Email or password does not match</Text>
+            <Text variant='danger'>Please input a correct last name</Text>
           )}
         </FormRow>
         <FormRow label='EMAIL' id='EMAIL'>
@@ -71,7 +71,7 @@ export const RegisterForm = () => {
             })}
           />
           {errors.emailSignup?.message && (
-            <Text variant='danger'>Email or password does not match</Text>
+            <Text variant='danger'>Please enter a correct email</Text>
           )}
         </FormRow>
         <FormRow label='PASSWORD' id='PASSWORD (min 8 characters)'>
@@ -84,7 +84,9 @@ export const RegisterForm = () => {
             })}
           />
           {errors.passwordSignup?.message && (
-            <Text variant='danger'>Email or password does not match</Text>
+            <Text variant='danger'>
+              Please input a correct password (8 letters minimum)
+            </Text>
           )}
         </FormRow>
         <FormRow label='CONFIRM PASSWORD' id='PASSWORDCONFIRM'>
@@ -97,7 +99,7 @@ export const RegisterForm = () => {
             })}
           />
           {errors.passwordConfirm?.message && (
-            <Text variant='danger'>Email or password does not match</Text>
+            <Text variant='danger'>Passwords are not identical</Text>
           )}
         </FormRow>
 

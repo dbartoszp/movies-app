@@ -26,7 +26,7 @@ export const Header = () => {
             </Link>
           </Navbar.NavbarGroupItem>
           <Navbar.NavbarGroupItem visibility='both'>
-            <Link href='/login'>
+            <Link href='/account'>
               <Text>ACCOUNT</Text>
             </Link>
           </Navbar.NavbarGroupItem>
