@@ -4,6 +4,7 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { MyLists } from './MyLists/MyLists';
+import { useState } from 'react';
 
 export const Dashboard = async () => {
   const supabase = createServerComponentClient({ cookies });
@@ -16,8 +17,9 @@ export const Dashboard = async () => {
   }
   return (
     <div>
-      <MyReviews userId={session?.user.id} limit={6} />
-      {/* <MyLists userId={session?.user.id} /> */}
+      <Text variant='title'>Your most recent reviews:</Text>
+      <MyReviews userId={session?.user.id} limit={3} />
+      <MyLists />
     </div>
   );
 };
