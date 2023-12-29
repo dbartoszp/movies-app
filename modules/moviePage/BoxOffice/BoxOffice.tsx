@@ -1,4 +1,4 @@
-import { Text } from '@/modules/Text/Text';
+import { Text } from '@/modules/ui/Text/Text';
 import React from 'react';
 
 type BoxOffice = {

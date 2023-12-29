@@ -1,6 +1,6 @@
 'use client';
 
-import { Text } from '@/modules/Text/Text';
+import { Text } from '@/modules/ui/Text/Text';
 import { useGetMovieById } from '@/modules/movies/useGetMovieById/useGetMovieById';
 import { MoviePageSkeleton } from '@/modules/moviePage/MoviePageSkeleton/MoviePageSkeleton';
 import { MovieDescription } from '@/modules/moviePage/MovieDescription/MovieDescription';

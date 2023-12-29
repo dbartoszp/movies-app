@@ -1,4 +1,4 @@
-import { Text } from '@/modules/Text/Text';
+import { Text } from '@/modules/ui/Text/Text';
 import { PosterLink } from '@/modules/TopMovies/TopMoviesHomepage/PosterLinkList/PosterLink/PosterLink';
 import { Link } from '@/modules/ui/Button/Link';
 import Image from 'next/image';

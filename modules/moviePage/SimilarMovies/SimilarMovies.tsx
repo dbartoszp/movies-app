@@ -1,4 +1,4 @@
-import { Text } from '@/modules/Text/Text';
+import { Text } from '@/modules/ui/Text/Text';
 import { SingleSimilarMovie } from './SingleSimilarMovie/SingleSimilarMovie';
 
 const SIMILAR_MOVIES_COUNT = 4;

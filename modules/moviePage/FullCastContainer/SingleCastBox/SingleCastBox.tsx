@@ -1,4 +1,4 @@
-import { Text } from '@/modules/Text/Text';
+import { Text } from '@/modules/ui/Text/Text';
 import { Link } from '@/modules/ui/Button/Link';
 import React from 'react';
 

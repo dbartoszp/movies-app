@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Link } from '../../../../ui/Button/Link';
-import { Text } from '@/modules/Text/Text';
+import { Text } from '@/modules/ui/Text/Text';
 
 type Movie = {
   id: string;

@@ -1,5 +1,5 @@
 'use client';
-import { Text } from '@/modules/Text/Text';
+import { Text } from '@/modules/ui/Text/Text';
 import { PosterLinkList } from './PosterLinkList/PosterLinkList';
 import { useGetLimitedPopularMoviesIDPoster } from '@/modules/movies/useGetLimitedPopularMoviesIDPoster/useGetLimitedPopularMoviesIDPoster';
 import { PosterLinkListSkeleton } from './PosterLinkList/PosterLinkListSkeleton/PosterLinkListSkeleton';

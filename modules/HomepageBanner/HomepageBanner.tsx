@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Text } from '../Text/Text';
+import { Text } from '../ui/Text/Text';
 
 export function HomepageBanner() {
   return (

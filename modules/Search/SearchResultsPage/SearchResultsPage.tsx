@@ -1,6 +1,6 @@
 'use client';
 
-import { Text } from '@/modules/Text/Text';
+import { Text } from '@/modules/ui/Text/Text';
 import { MoviesList } from '@/modules/movies/MoviesList/MoviesList';
 import { useGetMoviesByTitle } from '@/modules/movies/useGetMoviesByTitle/useGetMoviesByTitle';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';

@@ -2,7 +2,7 @@
 
 import { Link } from '../ui/Button/Link';
 import Navbar from '../Navbar/Navbar';
-import { Text } from '../Text/Text';
+import { Text } from '../ui/Text/Text';
 
 // const iconSize = 30;
 

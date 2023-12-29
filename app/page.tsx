@@ -1,6 +1,6 @@
 import { HomepageBanner } from '@/modules/HomepageBanner/HomepageBanner';
 import { Link } from '@/modules/ui/Button/Link';
-import { Text } from '@/modules/Text/Text';
+import { Text } from '@/modules/ui/Text/Text';
 import { TopMoviesHomepage } from '@/modules/TopMovies/TopMoviesHomepage/TopMoviesHomepage';
 
 export default function Home() {
