@@ -4,7 +4,7 @@ import React from 'react';
 import { FormRow } from '../FormRow/FormRow';
 import { useForm } from 'react-hook-form';
 import { Button } from '@/modules/ui/Button/Button';
-import { useLogin } from '../../user/hooks/useLogin/useLogin';
+import { useLogin } from '@/modules/users/hooks/useLogin/useLogin';
 
 export const LoginForm = () => {
   const login = useLogin();

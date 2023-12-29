@@ -7,8 +7,8 @@ import { Button } from '../../../ui/Button/Button';
 import { FormRow } from '../FormRow/FormRow';
 import { Text } from '@/modules/ui/Text/Text';
 
-import { useSignup } from '../../user/hooks/useSignup/useSignup';
 import { useForm } from 'react-hook-form';
+import { useSignup } from '@/modules/users/hooks/useSignup/useSignup';
 
 type FormValues = z.infer<typeof RegisterFormSchema>;
 export const RegisterForm = () => {

@@ -14,7 +14,7 @@ type PosterLinkProps = {
 
 export const PosterLink = ({ movie }: PosterLinkProps) => {
   return (
-    <>
+    <div className='flex flex-col items-center justify-center'>
       <Link href={`/movie/${movie.id}`}>
         <Image
           alt={`poster of ${movie.title}`}
@@ -24,6 +24,6 @@ export const PosterLink = ({ movie }: PosterLinkProps) => {
         />
       </Link>
       <Text>{movie.title}</Text>
-    </>
+    </div>
   );
 };
