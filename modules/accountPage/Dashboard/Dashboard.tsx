@@ -1,38 +1,23 @@
-'use client';
+import { Text } from '@/modules/ui/Text/Text';
+import { MyReviews } from './MyReviews/MyReviews';
+import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
+import { cookies } from 'next/headers';
+import { redirect } from 'next/navigation';
+import { MyLists } from './MyLists/MyLists';
 
-import { useCreateMovieReview } from '@/modules/reviews/hooks/useCreateMovieReview/useCreateMovieReview';
-import { useDeleteMovieReview } from '@/modules/reviews/hooks/useDeleteMovieReview/useDeleteMovieReview';
-import { Button } from '@/modules/ui/Button/Button';
+export const Dashboard = async () => {
+  const supabase = createServerComponentClient({ cookies });
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
 
-const testMovieReview = {
-  movieId: 'tt12747748',
-  writtenReview: 'pretty darn good',
-  rating: 6,
-};
-
-export const Dashboard = () => {
-  const createMovieReview = useCreateMovieReview();
-  const deleteMovieReview = useDeleteMovieReview();
-  const handleAddReview = () => {
-    createMovieReview.mutate({
-      rating: testMovieReview.rating,
-      movieId: testMovieReview.movieId,
-      writtenReview: testMovieReview.writtenReview,
-    });
-  };
-
-  const handleDeleteReview = () => {
-    deleteMovieReview.mutate(11);
-  };
-
+  if (!session) {
+    redirect('/login');
+  }
   return (
     <div>
-      <Button size='lg' variant='green' onClick={handleAddReview}>
-        test add review
-      </Button>
-      <Button size='lg' variant='danger' onClick={handleDeleteReview}>
-        test delete review
-      </Button>
+      <MyReviews userId={session?.user.id} limit={6} />
+      {/* <MyLists userId={session?.user.id} /> */}
     </div>
   );
 };
