@@ -13,6 +13,7 @@ import { GenreList } from '@/modules/moviePage/GenreList/GenreList';
 import { BoxOffice } from '@/modules/moviePage/BoxOffice/BoxOffice';
 import { SimilarMovies } from '@/modules/moviePage/SimilarMovies/SimilarMovies';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
+import { CreateReviewButton } from '@/modules/moviePage/CreateReviewButton/CreateReviewButton';
 
 export default function MoviePage({ params }: { params: { movieId: string } }) {
   const movie = useGetMovieById(params.movieId);
@@ -39,6 +40,7 @@ export default function MoviePage({ params }: { params: { movieId: string } }) {
           trailer={movieData.trailer}
           runtimeStr={movieData.runtimeStr || 'Unknown runtime'}
         />
+        <CreateReviewButton movieId={movieData.id} />
         <GenreList genreList={movieData.genreList} />
         <MovieAwardsContainer awards={movieData.awards || 'No awards yet'} />
         <MovieDescription description={movieData.plot} />
