@@ -5,6 +5,7 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';
 import { getCurrentUser } from '@/modules/users/utils/getCurrentUser/getCurrentUser';
+import { Dashboard } from '@/modules/accountPage/Dashboard/Dashboard';
 
 export default async function AccountPage() {
   const supabase = createServerComponentClient({ cookies });
@@ -20,7 +21,7 @@ export default async function AccountPage() {
     <main className='justify-center px-7 sm:mt-48 sm:flex sm:flex-row sm:items-start sm:space-x-12 md:space-x-36'>
       <LogoutButton />
 
-      <Text>AccountPage</Text>
+      <Dashboard />
     </main>
   );
 }

@@ -1,6 +1,5 @@
-import { useQueryClient } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
-import { useMutation } from 'react-query';
+import { useMutation } from '@tanstack/react-query';
 import { createMovieReview } from './apiCreateMovieReview';
 
 type MovieReview = {
