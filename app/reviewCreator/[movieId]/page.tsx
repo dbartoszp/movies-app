@@ -2,6 +2,7 @@
 
 import { useGetMovieById } from '@/modules/movies/useGetMovieById/useGetMovieById';
 import { RatingButton } from '@/modules/reviewCreatorPage/RatingButton/RatingButton';
+import { ReviewSubmitted } from '@/modules/reviewCreatorPage/ReviewSubmitted/ReviewSubmitted';
 import { useCreateMovieReview } from '@/modules/reviews/hooks/useCreateMovieReview/useCreateMovieReview';
 import { Button } from '@/modules/ui/Button/Button';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
@@ -43,14 +44,14 @@ export default function ReviewCreatorPage({
   if (movie.isLoading) return <Text>TODO SKELETON REVIEW CREATOR</Text>;
   if (!movie.isSuccess) return <ErrorMessage />;
 
-  if (isSubmitted) return <Text>Review submitted!</Text>;
+  if (isSubmitted) return <ReviewSubmitted />;
 
   return (
-    <main className='flex flex-col space-y-6 p-6'>
+    <main className='flex flex-col space-y-6 p-6 md:mx-auto md:mt-32 md:w-1/2 md:space-y-8'>
       <Text variant='title'>
         Create a review for <strong>{movie.data.fullTitle}</strong>
       </Text>
-      <div className='flex flex-col items-center justify-center bg-dark-blue p-4'>
+      <div className=' flex flex-col items-center justify-center bg-dark-blue p-4'>
         <Text>Select your rating from 1 to 10:</Text>
         <div className='mt-4'>
           {Array.from({ length: MAX_RATING }, (_, index) => (
@@ -63,8 +64,8 @@ export default function ReviewCreatorPage({
           ))}
         </div>
       </div>
-      <Text>Write your review:</Text>
-      <div>
+      <div className='flex flex-col space-y-2'>
+        <Text>Write your review:</Text>
         <textarea
           maxLength={CHARACTER_LIMIT}
           value={writtenReview}
