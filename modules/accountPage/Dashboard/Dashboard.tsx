@@ -27,9 +27,13 @@ export const Dashboard = ({ userId }: DashboardProps) => {
           </Text>
         </Button>
       </div>
-      <Text variant='title'>Your most recent reviews:</Text>
-      <MyReviews userId={userId} limit={3} />
-      <MyLists />
+      {activeTab === 'reviews' && (
+        <>
+          <Text variant='title'>Your most recent reviews:</Text>
+          <MyReviews userId={userId} limit={3} />
+        </>
+      )}
+      {activeTab === 'lists' && <MyLists />}
     </div>
   );
 };

@@ -33,8 +33,7 @@ export const MyReviews = ({ userId, limit = 0 }: MyReviewsProps) => {
             reviewId={review.id}
           />
         ))}
-        {(limit > 0 ||
-          reviews.data.length - sortedAndTrimmedReviews.length < 0) && (
+        {limit > 0 && reviews.data.length > sortedAndTrimmedReviews.length && (
           <>
             <Text variant='subtitle'>
               ...and {reviews.data.length - sortedAndTrimmedReviews.length}{' '}
