@@ -7,7 +7,6 @@ const IMDB_API_KEY = 'k_2x4eak3e';
 export const getAllPopularMoviesIDPoster = async () => {
   const res = await axios.get(`${POPULAR_MOVIES_URL}${IMDB_API_KEY}`);
   const movies = useGetAllPopularMoviesReturnSchema.safeParse(res.data);
-  console.log(movies);
 
   if (movies.success) {
     console.log('IDposters:', movies.data.items);
