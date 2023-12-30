@@ -1,15 +1,18 @@
 'use client';
 
 import { useCreateMoviesList } from '@/modules/lists/hooks/useCreateMoviesList/useCreateMoviesList';
+import { useDeleteMoviesList } from '@/modules/lists/hooks/useDeleteMoviesList/useDeleteMoviesList';
 import { Button } from '@/modules/ui/Button/Button';
 
 const testMoviesList = {
   listName: 'TestLista',
   description: 'lista do testowania',
+  id: 3,
 };
 
 export const MyLists = () => {
   const createMoviesList = useCreateMoviesList();
+  const deleteMoviesList = useDeleteMoviesList();
 
   const handleCreate = () => {
     createMoviesList.mutate({
@@ -18,7 +21,9 @@ export const MyLists = () => {
     });
   };
   const handleUpdate = () => {};
-  const handleDelete = () => {};
+  const handleDelete = () => {
+    deleteMoviesList.mutate(testMoviesList.id);
+  };
 
   return (
     <div>
