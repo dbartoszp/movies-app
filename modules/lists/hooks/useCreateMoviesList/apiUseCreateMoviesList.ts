@@ -15,7 +15,7 @@ export const createMoviesList = async ({
   const supabase = createClientComponentClient();
   const { error } = await supabase
     .from('moviesList')
-    .insert([{ listName, description }])
+    .insert([{ listName, description, userId: user.user.id }])
     .select();
 
   if (error) console.log(error);
