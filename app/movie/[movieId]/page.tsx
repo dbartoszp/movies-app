@@ -22,7 +22,9 @@ export default function MoviePage({ params }: { params: { movieId: string } }) {
   }
   if (!movie.isSuccess) {
     console.log(movie.error);
-    return <ErrorMessage />;
+    return (
+      <ErrorMessage message="It looks like we don't have data about this title. We apologize for any inconvenience!" />
+    );
   }
 
   const movieData = movie.data;

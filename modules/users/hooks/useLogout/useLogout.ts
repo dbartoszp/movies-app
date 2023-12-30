@@ -1,7 +1,7 @@
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { useRouter } from "next/navigation";
-import { toast } from "react-hot-toast";
-import { logout } from "./apiUseLogout";
+import { useMutation, useQueryClient } from '@tanstack/react-query';
+import { useRouter } from 'next/navigation';
+import { toast } from 'react-hot-toast';
+import { logout } from './apiUseLogout';
 
 export const useLogout = () => {
   const router = useRouter();
@@ -11,12 +11,13 @@ export const useLogout = () => {
     mutationFn: logout,
     onSuccess: () => {
       router.refresh();
-      toast.success("Successfully logged out");
+      toast.success('Successfully logged out');
       queryClient.removeQueries();
-      router.push("/login");
+      router.push('/login');
+      window.location.reload();
     },
     onError: (err) => {
-      console.log("ERROR", err);
+      console.log('ERROR', err);
     },
   });
 };
