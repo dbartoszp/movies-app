@@ -1,6 +1,5 @@
 'use client';
 
-import { Text } from '@/modules/ui/Text/Text';
 import { useGetMovieById } from '@/modules/movies/useGetMovieById/useGetMovieById';
 import { MoviePageSkeleton } from '@/modules/moviePage/MoviePageSkeleton/MoviePageSkeleton';
 import { MovieDescription } from '@/modules/moviePage/MovieDescription/MovieDescription';
@@ -14,7 +13,6 @@ import { BoxOffice } from '@/modules/moviePage/BoxOffice/BoxOffice';
 import { SimilarMovies } from '@/modules/moviePage/SimilarMovies/SimilarMovies';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 import { CreateReviewButton } from '@/modules/moviePage/CreateReviewButton/CreateReviewButton';
-import { getCurrentUser } from '@/modules/users/utils/getCurrentUser/getCurrentUser';
 
 export default function MoviePage({ params }: { params: { movieId: string } }) {
   const movie = useGetMovieById(params.movieId);

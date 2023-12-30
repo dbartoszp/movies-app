@@ -22,8 +22,14 @@ export const MyReviews = ({ userId, limit = 0 }: MyReviewsProps) => {
     .slice(0, limit > 0 ? limit : reviews.data.length);
 
   return (
-    <div className='flex flex-col space-y-4'>
+    <div className='my-4 flex flex-col space-y-4'>
       <div className='flex flex-col items-center justify-center space-y-4'>
+        {sortedAndTrimmedReviews.length === 0 && (
+          <Text variant='danger'>
+            You still haven&apos;t reviewd a movie yet, go to a movie page to
+            create one!
+          </Text>
+        )}
         {sortedAndTrimmedReviews.map((review) => (
           <ReviewPreview
             key={review.id}
