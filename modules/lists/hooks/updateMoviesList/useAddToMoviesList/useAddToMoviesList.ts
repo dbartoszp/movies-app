@@ -8,8 +8,6 @@ type AddToMoviesListParams = {
   movieIdToAdd: string;
 };
 
-type MovieIdToAdd = {};
-
 export const useAddToMoviesList = () => {
   return useMutation({
     mutationFn: ({ listId, movieIdToAdd }: AddToMoviesListParams) =>
@@ -21,7 +19,6 @@ export const useAddToMoviesList = () => {
       toast.success('Succesfully added the movie to the list!');
     },
     onError: (err) => {
-      console.log('ERROR', err);
       toast.error('Could not add to the list');
     },
   });

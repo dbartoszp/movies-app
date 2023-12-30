@@ -1,15 +1,15 @@
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { getCurrentUser } from '@/modules/users/utils/getCurrentUser/getCurrentUser';
 
-type AddToMovieListParams = {
+type DeleteFromMovieListParams = {
   listId: number;
-  movieIdToAdd: string;
+  movieIdToRemove: string;
 };
 
-export const addToMoviesList = async ({
+export const deleteFromMoviesList = async ({
   listId,
-  movieIdToAdd,
-}: AddToMovieListParams) => {
+  movieIdToRemove,
+}: DeleteFromMovieListParams) => {
   const user = await getCurrentUser();
   if (!user) throw new Error('User not found');
 
@@ -23,20 +23,18 @@ export const addToMoviesList = async ({
 
   if (fetchError) throw fetchError;
 
-  const updatedMovieIds = currentList.movieIds
-    ? [...currentList.movieIds, movieIdToAdd]
-    : [movieIdToAdd];
+  const indexToRemove = currentList.movieIds.indexOf(movieIdToRemove);
+  if (indexToRemove !== -1) {
+    currentList.movieIds.splice(indexToRemove, 1);
+  }
 
   const { error: updateError } = await supabase
     .from('moviesList')
-    .update({ movieIds: updatedMovieIds })
+    .update({ movieIds: currentList.movieIds })
     .eq('id', listId)
     .single();
 
-  if (updateError) {
-    console.log(updateError);
-    throw updateError;
-  }
+  if (updateError) throw updateError;
 
-  return { message: 'Movie added to list successfully' };
+  return { message: 'Movie removed from list successfully' };
 };
