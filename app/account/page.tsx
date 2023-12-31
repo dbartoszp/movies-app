@@ -17,8 +17,8 @@ export default async function AccountPage() {
 
   return (
     <main className='justify-center px-7 sm:mt-48 sm:flex sm:flex-row sm:items-start sm:space-x-12 md:space-x-36'>
-      <Dashboard userId={session.user.id} />
       <LogoutButton />
+      <Dashboard userId={session.user.id} />
     </main>
   );
 }

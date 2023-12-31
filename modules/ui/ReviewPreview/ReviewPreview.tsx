@@ -2,7 +2,6 @@ import { useGetMovieById } from '@/modules/movies/useGetMovieById/useGetMovieByI
 import { Text } from '../Text/Text';
 import { ErrorMessage } from '../ErrorMessage/ErrorMessage';
 import { HiMiniTrash } from 'react-icons/hi2';
-import { Button } from '../Button/Button';
 import { useDeleteMovieReview } from '@/modules/reviews/hooks/useDeleteMovieReview/useDeleteMovieReview';
 import { Link } from '../Button/Link';
 import { MouseEvent } from 'react';

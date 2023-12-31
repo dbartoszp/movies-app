@@ -10,6 +10,7 @@ export const getMoviesListsByUserId = async (userId: string) => {
     .eq('userId', userId);
   console.log(data);
   const moviesList = moviesListArraySchema.safeParse(data);
+
   if (moviesList.success) {
     return moviesList.data;
   }

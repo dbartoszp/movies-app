@@ -33,7 +33,7 @@ export const Dashboard = ({ userId }: DashboardProps) => {
           <MyReviews userId={userId} limit={3} />
         </>
       )}
-      {activeTab === 'lists' && <MyLists />}
+      {activeTab === 'lists' && <MyLists userId={userId} limit={3} />}
     </div>
   );
 };
