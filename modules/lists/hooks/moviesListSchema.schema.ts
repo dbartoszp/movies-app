@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const moviesListSchema = z.object({
+const moviesListSchema = z.object({
   id: z.number(),
   created_at: z.date(),
   movieIds: z.array(z.string()),
@@ -8,3 +8,5 @@ export const moviesListSchema = z.object({
   listName: z.string(),
   description: z.string().optional(),
 });
+
+export const moviesListArraySchema = z.array(moviesListSchema);
