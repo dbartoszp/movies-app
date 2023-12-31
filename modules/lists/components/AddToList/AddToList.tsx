@@ -20,7 +20,7 @@ export const AddToList = ({ movieId, userId }: AddToListProps) => {
     );
   console.log(lists.data);
   return (
-    <div>
+    <div className='mt-4 flex flex-col space-y-2'>
       {lists.data.map((list) => (
         <SingleListAdd key={list.id} movieId={movieId} listId={list.id} />
       ))}

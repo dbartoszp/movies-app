@@ -36,9 +36,7 @@ export const ListCreator = ({ userId }: ListCreatorProps) => {
   return (
     <div className='flex flex-col space-y-4'>
       {isSubmitted ? (
-        <Text variant='green'>
-          Your movies list has been created. You can close this modal now.
-        </Text>
+        <Text variant='green'>Your movies list has been created.</Text>
       ) : (
         <>
           <Text variant='title'>

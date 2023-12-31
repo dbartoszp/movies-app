@@ -1,5 +1,5 @@
 import toast from 'react-hot-toast';
-import { useMutation } from '@tanstack/react-query';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useRouter } from 'next/navigation';
 import { createMoviesList } from './apiUseCreateMoviesList';
 
@@ -9,8 +9,7 @@ type MovieList = {
 };
 
 export const useCreateMoviesList = () => {
-  const router = useRouter();
-
+  const queryClient = useQueryClient();
   return useMutation({
     mutationFn: ({ listName, description }: MovieList) =>
       createMoviesList({
@@ -18,6 +17,9 @@ export const useCreateMoviesList = () => {
         description,
       }),
     onSuccess: () => {
+      queryClient.invalidateQueries({
+        queryKey: ['moviesList'],
+      });
       toast.success('Succesfully created a movie list!');
     },
     onError: (err) => {

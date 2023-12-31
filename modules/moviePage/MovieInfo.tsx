@@ -73,11 +73,15 @@ export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
                 open={isOpen}
                 onOpenChange={changeOpenState}
               >
-                <AddToList userId={userId} movieId={movieId} />
-                {/* <Text variant='subtitleXL'>
-                  Or create a new list to add the movie to!
-                </Text>
-                <ListCreator userId={userId} /> */}
+                <div className='flex flex-col space-y-12'>
+                  <AddToList userId={userId} movieId={movieId} />
+                  <Text variant='subtitleXL'>
+                    Or create a new list to add the movie to!
+                  </Text>
+                  <div>
+                    <ListCreator userId={userId} />
+                  </div>
+                </div>
               </Modal>
             </div>
           </>
