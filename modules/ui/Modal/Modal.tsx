@@ -50,12 +50,14 @@ export const Modal = ({
           <Dialog.Title className='flex w-full justify-between text-2xl font-semibold'>
             <Text>{title}</Text>
             <div>
-              <Button size='md' variant='secondary' onClick={handleClose}>
+              <Button size='md' variant='green' onClick={handleClose}>
                 <HiXMark />
               </Button>
             </div>
           </Dialog.Title>
-          <Dialog.Description>{description}</Dialog.Description>
+          <Dialog.Description>
+            <Text>{description}</Text>
+          </Dialog.Description>
           {children}
         </Dialog.Content>
       </Dialog.Portal>
