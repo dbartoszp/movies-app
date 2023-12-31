@@ -30,9 +30,9 @@ export const MyLists = ({ userId, limit = 0 }: MyListsProps) => {
   const { isOpen, close, changeOpenState } = useDisclosure();
 
   const addMovieToList = useAddToMoviesList();
-  const handleAddMovieToList = () => {
-    addMovieToList.mutate({ movieIdToAdd: 'tt6166392', listId: 11 });
-  };
+  // const handleAddMovieToList = () => {
+  //   addMovieToList.mutate({ movieIdToAdd: 'tt6166392', listId: 11 });
+  // };
 
   if (lists.isLoading) return <Text>TODO SKELETON MYLISTS</Text>;
   if (!lists.isSuccess)
@@ -44,17 +44,17 @@ export const MyLists = ({ userId, limit = 0 }: MyListsProps) => {
     ? lists.data
         .sort((a, b) => b.id - a.id)
         .slice(0, limit > 0 ? limit : lists.data.length)
-    : []; // If lists.data is not an array, default to an empty array
+    : [];
 
   return (
     <div className='flex flex-col space-y-2'>
-      <Button size='lg' variant='green' onClick={handleAddMovieToList}>
+      {/* <Button size='lg' variant='green' onClick={handleAddMovieToList}>
         TEST ADD TO MOVIE LIST
-      </Button>
+      </Button> */}
       <Text variant='title'>
         Create a new list, or browse your existing ones!
       </Text>
-      <div className='flex items-center justify-center'>
+      <div className='flex items-center justify-center py-8'>
         <Modal
           openVariant='green'
           title='Create a new list'

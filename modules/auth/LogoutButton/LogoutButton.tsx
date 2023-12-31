@@ -11,8 +11,8 @@ export const LogoutButton = () => {
 
   return (
     <div>
-      <Button variant='danger' size='sm' onClick={onLogout}>
-        <Text>Log out</Text>
+      <Button size='sm' onClick={onLogout}>
+        <Text variant='danger'>Log out</Text>
       </Button>
     </div>
   );

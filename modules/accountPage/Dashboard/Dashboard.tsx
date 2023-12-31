@@ -13,8 +13,7 @@ export const Dashboard = ({ userId }: DashboardProps) => {
   const [activeTab, setActiveTab] = useState('reviews');
 
   return (
-    <div>
-      <Text variant='title'>Dashboard</Text>
+    <>
       <div className='my-6 flex flex-row justify-center'>
         <Button size='lg' onClick={() => setActiveTab('reviews')}>
           <Text variant={activeTab === 'reviews' ? 'green' : 'default'}>
@@ -34,6 +33,6 @@ export const Dashboard = ({ userId }: DashboardProps) => {
         </>
       )}
       {activeTab === 'lists' && <MyLists userId={userId} limit={3} />}
-    </div>
+    </>
   );
 };

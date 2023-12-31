@@ -4,6 +4,7 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';
 import { Dashboard } from '@/modules/accountPage/Dashboard/Dashboard';
+import { Text } from '@/modules/ui/Text/Text';
 
 export default async function AccountPage() {
   const supabase = createServerComponentClient({ cookies });
@@ -16,8 +17,11 @@ export default async function AccountPage() {
   }
 
   return (
-    <main className='justify-center px-7 sm:mt-48 sm:flex sm:flex-row sm:items-start sm:space-x-12 md:space-x-36'>
-      <LogoutButton />
+    <main className='flex min-h-screen flex-col items-center px-7 sm:mt-24'>
+      <div className='flex flex-row items-center justify-around pt-8 sm:space-x-36'>
+        <Text variant='title'>Dashboard</Text>
+        <LogoutButton />
+      </div>
       <Dashboard userId={session.user.id} />
     </main>
   );
