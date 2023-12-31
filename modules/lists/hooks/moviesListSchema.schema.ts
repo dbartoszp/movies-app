@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-const moviesListSchema = z.object({
+export const moviesListSchema = z.object({
   id: z.number(),
   created_at: z.string(),
   movieIds: z.array(z.union([z.string(), z.null()])).nullable(),

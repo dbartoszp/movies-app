@@ -28,7 +28,7 @@ export const ListPreview = ({
   return (
     <div className='flex flex-row justify-between bg-dark-blue p-2 pb-4 '>
       <div className='flex flex-col'>
-        <Link href={`/lists/${listId}`}>
+        <Link href={`/list/${listId}`}>
           <Text variant='title'>{listName}</Text>
           <Text variant='subtitle'>
             <span className='italic'>&quot;{listName}&quot;</span>
