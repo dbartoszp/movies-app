@@ -26,12 +26,14 @@ export const ListInfo = ({ listId }: ListInfoProps) => {
   const listData = list.data;
 
   return (
-    <div className='flex flex-row justify-between bg-dark-blue p-2 pb-4 '>
-      <div className='mt-12 flex flex-col space-y-12 px-6'>
+    <div className='flex flex-row items-center justify-center p-2 pb-4  md:min-h-screen'>
+      <div className='mt-12 flex flex-col space-y-12 bg-dark-blue px-6 py-4 md:px-36 md:py-12'>
         <div className='flex flex-row justify-between'>
           <div className='mb-7 flex flex-col space-y-4'>
             <div>
-              <Text variant='title'>{listData.listName}</Text>
+              <Text variant='title'>
+                Movie list: <strong>{listData.listName}</strong>
+              </Text>
               <Text variant='subtitle'>
                 <span className='italic'>&quot;{listData.listName}&quot;</span>
               </Text>

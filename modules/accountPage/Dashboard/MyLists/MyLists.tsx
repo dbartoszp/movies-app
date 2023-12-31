@@ -40,9 +40,11 @@ export const MyLists = ({ userId, limit = 0 }: MyListsProps) => {
       <ErrorMessage message='Could not fetch your lists. Please come back later!' />
     );
 
-  const sortedAndTrimmedlists = lists.data
-    .sort((a, b) => b.id - a.id)
-    .slice(0, limit > 0 ? limit : lists.data.length);
+  const sortedAndTrimmedlists = Array.isArray(lists.data)
+    ? lists.data
+        .sort((a, b) => b.id - a.id)
+        .slice(0, limit > 0 ? limit : lists.data.length)
+    : []; // If lists.data is not an array, default to an empty array
 
   return (
     <div className='flex flex-col space-y-2'>
