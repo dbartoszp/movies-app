@@ -43,6 +43,7 @@ export const ListCreator = ({ userId }: ListCreatorProps) => {
         <>
           <Text variant='title'>Title of your list: (20 characters max)</Text>
           <textarea
+            spellCheck={false}
             maxLength={LIST_TITLE_LIMIT}
             value={listName}
             onChange={handleListNameChange}
@@ -52,6 +53,7 @@ export const ListCreator = ({ userId }: ListCreatorProps) => {
             Brief description of your list: (20 characters max)
           </Text>
           <textarea
+            spellCheck={false}
             maxLength={LIST_DESCRIPTION_LIMIT}
             value={listDescription}
             onChange={handleListDescriptionChange}

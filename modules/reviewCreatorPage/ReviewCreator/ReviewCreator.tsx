@@ -61,6 +61,7 @@ export const ReviewCreator = ({ movieId }: ReviewCreatorProps) => {
       <div className='flex flex-col space-y-2'>
         <Text>Write your review:</Text>
         <textarea
+          spellCheck={false}
           maxLength={CHARACTER_LIMIT}
           value={writtenReview}
           onChange={handleWrittenReviewChange}
