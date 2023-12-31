@@ -29,6 +29,11 @@ export const MyLists = ({ userId, limit = 0 }: MyListsProps) => {
   const lists = useGetMoviesListsByUserId(userId);
   const { isOpen, close, changeOpenState } = useDisclosure();
 
+  const addMovieToList = useAddToMoviesList();
+  const handleAddMovieToList = () => {
+    addMovieToList.mutate({ movieIdToAdd: 'tt6166392', listId: 11 });
+  };
+
   if (lists.isLoading) return <Text>TODO SKELETON MYLISTS</Text>;
   if (!lists.isSuccess)
     return (
@@ -41,6 +46,9 @@ export const MyLists = ({ userId, limit = 0 }: MyListsProps) => {
 
   return (
     <div className='flex flex-col space-y-2'>
+      <Button size='lg' variant='green' onClick={handleAddMovieToList}>
+        TEST ADD TO MOVIE LIST
+      </Button>
       <Text variant='title'>
         Create a new list, or browse your existing ones!
       </Text>

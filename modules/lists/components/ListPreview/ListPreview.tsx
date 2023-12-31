@@ -27,8 +27,8 @@ export const ListPreview = ({
 
   return (
     <div className='flex flex-row justify-between bg-dark-blue p-2 pb-4 '>
-      <div className='flex flex-col'>
-        <Link href={`/list/${listId}`}>
+      <Link href={`/list/${listId}`}>
+        <div className='flex flex-col'>
           <Text variant='title'>{listName}</Text>
           <Text variant='subtitle'>
             <span className='italic'>&quot;{listName}&quot;</span>
@@ -49,8 +49,8 @@ export const ListPreview = ({
                 ))
             )}
           </div>
-        </Link>
-      </div>
+        </div>
+      </Link>
       <div
         onClick={handleDeleteMoviesList}
         className='my-auto cursor-pointer hover:bg-light-blue'

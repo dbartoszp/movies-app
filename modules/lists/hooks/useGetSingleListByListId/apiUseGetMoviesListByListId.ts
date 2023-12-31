@@ -4,7 +4,11 @@ import { moviesListSchema } from '../moviesListSchema.schema';
 export const getMoviesListByListId = async (id: number) => {
   const supabase = createClientComponentClient();
 
-  const { data } = await supabase.from('moviesList').select('*').eq('id', id);
+  const { data } = await supabase
+    .from('moviesList')
+    .select('*')
+    .eq('id', id)
+    .single();
   console.log(data);
   const moviesList = moviesListSchema.safeParse(data);
 
