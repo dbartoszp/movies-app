@@ -16,13 +16,16 @@ import { CreateReviewButton } from '@/modules/moviePage/CreateReviewButton/Creat
 import { Modal } from '@/modules/ui/Modal/Modal';
 import { useDisclosure } from '@/modules/ui/Modal/useDisclosure/useDisclosure';
 import { Link } from '../ui/Button/Link';
+import { ListCreator } from '../lists/components/ListCreator/ListCreator';
+import { Text } from '../ui/Text/Text';
 
 type MoviePageProps = {
   movieId: string;
   isAuth: boolean;
+  userId?: string;
 };
 
-export const MovieInfo = ({ movieId, isAuth }: MoviePageProps) => {
+export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
   const movie = useGetMovieById(movieId);
   const { isOpen, close, changeOpenState } = useDisclosure();
 
@@ -53,7 +56,7 @@ export const MovieInfo = ({ movieId, isAuth }: MoviePageProps) => {
         {!isAuth && (
           <div className='flex items-center justify-center'>
             <Link variant='green' size='sm' href='/login'>
-              Log in first to review or add to a list!
+              <Text>Log in first to review or add to a list!</Text>
             </Link>
           </div>
         )}
@@ -63,13 +66,13 @@ export const MovieInfo = ({ movieId, isAuth }: MoviePageProps) => {
             <div className='flex items-center justify-center'>
               <Modal
                 openVariant='green'
-                title='ModalTestTitle'
+                title='Select a list to add this movie to'
                 openText='Add to a list'
                 onClose={close}
                 open={isOpen}
                 onOpenChange={changeOpenState}
               >
-                ModalTest
+                <ListCreator userId={userId} />
               </Modal>
             </div>
           </>

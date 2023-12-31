@@ -48,16 +48,14 @@ export const Modal = ({
         <Dialog.Overlay className='fixed inset-0 bg-dark-blue opacity-50' />
         <Dialog.Content className='fixed left-1/2 top-1/2 max-h-[80vh] w-11/12 -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-md bg-default-blue px-10 pb-10 pt-4 shadow-md md:w-7/12 lg:w-5/12'>
           <Dialog.Title className='flex w-full justify-between text-2xl font-semibold'>
-            <Text>{title}</Text>
+            {title}
             <div>
               <Button size='md' variant='green' onClick={handleClose}>
                 <HiXMark />
               </Button>
             </div>
           </Dialog.Title>
-          <Dialog.Description>
-            <Text>{description}</Text>
-          </Dialog.Description>
+          <Dialog.Description>{description}</Dialog.Description>
           {children}
         </Dialog.Content>
       </Dialog.Portal>

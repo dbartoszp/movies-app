@@ -14,5 +14,11 @@ export default async function MoviePage({
   } = await supabase.auth.getSession();
   if (session) isAuth = true;
 
-  return <MovieInfo isAuth={isAuth} movieId={params.movieId} />;
+  return (
+    <MovieInfo
+      isAuth={isAuth}
+      movieId={params.movieId}
+      userId={session?.user.id}
+    />
+  );
 }
