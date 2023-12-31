@@ -19,7 +19,6 @@ export const useCreateMoviesList = () => {
       }),
     onSuccess: () => {
       toast.success('Succesfully created a movie list!');
-      router.push('/account');
     },
     onError: (err) => {
       console.log('ERROR', err);

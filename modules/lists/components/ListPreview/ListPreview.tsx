@@ -1,7 +1,6 @@
 'use client';
 
 import { Text } from '@/modules/ui/Text/Text';
-import { useGetMoviesListsByUserId } from '../../hooks/useGetListsByUserId/useGetListsByUserId';
 import { HiMiniTrash } from 'react-icons/hi2';
 import { useDeleteMoviesList } from '../../hooks/useDeleteMoviesList/useDeleteMoviesList';
 import { MoviePreviewSmall } from './MoviePreviewSmall/MoviePreviewSmall';

@@ -9,7 +9,7 @@ export const getMoviesListByListId = async (id: number) => {
     .select('*')
     .eq('id', id)
     .single();
-  console.log(data);
+  // console.log(data);
   const moviesList = moviesListSchema.safeParse(data);
 
   if (moviesList.success) {

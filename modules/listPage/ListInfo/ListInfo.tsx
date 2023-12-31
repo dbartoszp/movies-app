@@ -1,7 +1,6 @@
 'use client';
 
 import { useGetMoviesListByListId } from '@/modules/lists/hooks/useGetSingleListByListId/useGetMoviesListByListId';
-import { Link } from '@/modules/ui/Button/Link';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 import { Text } from '@/modules/ui/Text/Text';
 import { MoviePreview } from '../MoviePreview/MoviePreview';

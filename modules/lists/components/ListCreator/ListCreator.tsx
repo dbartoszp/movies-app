@@ -9,7 +9,7 @@ type ListCreatorProps = {
 };
 
 const LIST_TITLE_LIMIT = 20;
-const LIST_DESCRIPTION_LIMIT = 20;
+const LIST_DESCRIPTION_LIMIT = 40;
 
 export const ListCreator = ({ userId }: ListCreatorProps) => {
   const createMoviesList = useCreateMoviesList();
@@ -41,7 +41,9 @@ export const ListCreator = ({ userId }: ListCreatorProps) => {
         </Text>
       ) : (
         <>
-          <Text variant='title'>Title of your list: (20 characters max)</Text>
+          <Text variant='title'>
+            Title of your list: ({LIST_TITLE_LIMIT} characters max)
+          </Text>
           <textarea
             spellCheck={false}
             maxLength={LIST_TITLE_LIMIT}
@@ -50,7 +52,8 @@ export const ListCreator = ({ userId }: ListCreatorProps) => {
             className='h-10 w-full resize-none bg-dark-blue p-1'
           />
           <Text variant='title'>
-            Brief description of your list: (20 characters max)
+            Brief description of your list: ({LIST_DESCRIPTION_LIMIT} characters
+            max)
           </Text>
           <textarea
             spellCheck={false}

@@ -6,7 +6,7 @@ import { useAddToMoviesList } from '@/modules/lists/hooks/updateMoviesList/useAd
 import { useDeleteFromMoviesList } from '@/modules/lists/hooks/updateMoviesList/useDeleteFromMoviesList/useDeleteFromMoviesList';
 import { useCreateMoviesList } from '@/modules/lists/hooks/useCreateMoviesList/useCreateMoviesList';
 import { useDeleteMoviesList } from '@/modules/lists/hooks/useDeleteMoviesList/useDeleteMoviesList';
-import { useGetMoviesListsByUserId } from '@/modules/lists/hooks/useGetListsByUserId/useGetListsByUserId';
+import { useGetMoviesListsByUserId } from '@/modules/lists/hooks/useGetListsByUserId/useGetMoviesListsByUserId';
 import { Button } from '@/modules/ui/Button/Button';
 import { Link } from '@/modules/ui/Button/Link';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';

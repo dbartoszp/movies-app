@@ -18,7 +18,7 @@ import { useDisclosure } from '@/modules/ui/Modal/useDisclosure/useDisclosure';
 import { Link } from '../ui/Button/Link';
 import { ListCreator } from '../lists/components/ListCreator/ListCreator';
 import { Text } from '../ui/Text/Text';
-import { ListPreview } from '../lists/components/ListPreview/ListPreview';
+import { AddToList } from '../lists/components/AddToList/AddToList';
 
 type MoviePageProps = {
   movieId: string;
@@ -73,8 +73,11 @@ export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
                 open={isOpen}
                 onOpenChange={changeOpenState}
               >
-                {/* <ListPreview /> */}
-                <ListCreator userId={userId} />
+                <AddToList userId={userId} movieId={movieId} />
+                {/* <Text variant='subtitleXL'>
+                  Or create a new list to add the movie to!
+                </Text>
+                <ListCreator userId={userId} /> */}
               </Modal>
             </div>
           </>
