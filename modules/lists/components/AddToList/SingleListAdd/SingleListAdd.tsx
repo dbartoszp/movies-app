@@ -15,5 +15,10 @@ export const SingleListAdd = ({ listId, movieId }: SingleListAdd) => {
   if (list.isLoading) return <Text>TODO SKELETON LIST</Text>;
   if (!list.isSuccess) return <ErrorMessage />;
 
-  return <div>SingleListAdd</div>;
+  return (
+    <div>
+      {list.data.id}
+      {movieId}
+    </div>
+  );
 };

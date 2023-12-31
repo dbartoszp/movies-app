@@ -19,13 +19,9 @@ export const AddToList = ({ movieId, userId }: AddToListProps) => {
       <ErrorMessage message='Could not fetch your lists. Please come back later!' />
     );
   console.log(lists.data);
-  const sortedAndTrimmedlists = Array.isArray(lists.data)
-    ? lists.data.sort((a, b) => b.id - a.id)
-    : [];
-
   return (
     <div>
-      {sortedAndTrimmedlists.map((list) => (
+      {lists.data.map((list) => (
         <SingleListAdd key={list.id} movieId={movieId} listId={list.id} />
       ))}
     </div>
