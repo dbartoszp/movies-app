@@ -1,4 +1,3 @@
-import React from 'react';
 import { SingleCastBox } from './SingleCastBox/SingleCastBox';
 import { Text } from '@/modules/ui/Text/Text';
 

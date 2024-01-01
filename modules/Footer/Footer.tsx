@@ -1,4 +1,3 @@
-import React from 'react';
 import { Text } from '../ui/Text/Text';
 import { Link } from '../ui/Button/Link';
 import { FaLinkedin } from 'react-icons/fa6';

@@ -1,6 +1,5 @@
 'use client';
 import { Text } from '@/modules/ui/Text/Text';
-import React from 'react';
 import { FormRow } from '../FormRow/FormRow';
 import { useForm } from 'react-hook-form';
 import { Button } from '@/modules/ui/Button/Button';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { PosterLinkSkeleton } from './PosterLinkSkeleton/PosterLinkSkeleton';
 
 export const PosterLinkListSkeleton = () => {

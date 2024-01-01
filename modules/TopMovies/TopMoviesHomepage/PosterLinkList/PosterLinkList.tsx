@@ -1,4 +1,3 @@
-import React from 'react';
 import { PosterLink } from './PosterLink/PosterLink';
 
 type IDPoster = {

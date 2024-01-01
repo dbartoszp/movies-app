@@ -1,5 +1,4 @@
 import { Text } from '@/modules/ui/Text/Text';
-import React from 'react';
 
 type MovieRatingsProps = {
   imDbRating: string;
@@ -11,8 +10,8 @@ type MovieRatingsProps = {
 export const MovieRatings = ({
   imDbRating,
   imDbRatingVotes, //   moviesappRating,
-} //   moviesappReviewCount,
-: MovieRatingsProps) => {
+  //   moviesappReviewCount,
+}: MovieRatingsProps) => {
   return (
     <div className='mx-8 mt-6 bg-dark-blue px-10 py-4 md:mx-auto md:w-full'>
       <div className='mb-2 border-b border-light-blue-lighter pb-1'>

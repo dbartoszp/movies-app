@@ -1,5 +1,4 @@
 import { Text } from '@/modules/ui/Text/Text';
-import React from 'react';
 
 type MovieDescriptionProps = {
   description?: string | null;

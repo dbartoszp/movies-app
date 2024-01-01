@@ -1,6 +1,4 @@
 import { Text } from '@/modules/ui/Text/Text';
-import React from 'react';
-
 type BoxOffice = {
   budget?: string;
   openingWeekendUSA?: string;

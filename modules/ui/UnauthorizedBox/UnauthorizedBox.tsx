@@ -1,4 +1,3 @@
-import React from 'react';
 import { Text } from '../Text/Text';
 import { Link } from '@/modules/ui/Button/Link';
 
