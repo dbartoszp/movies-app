@@ -26,7 +26,7 @@ export const MyReviews = ({ userId, limit = 0 }: MyReviewsProps) => {
       <div className='flex flex-col items-center justify-center space-y-4'>
         {sortedAndTrimmedReviews.length === 0 && (
           <Text variant='danger'>
-            You still haven&apos;t reviewd a movie yet, go to a movie page to
+            You still haven&apos;t reviewed a movie yet, go to a movie page to
             create one!
           </Text>
         )}

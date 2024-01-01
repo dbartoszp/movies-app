@@ -31,7 +31,7 @@ export const ReviewPreview = ({
   if (!movie.isSuccess) return <ErrorMessage />;
 
   return (
-    <div className='w-11/12'>
+    <div className='w-full'>
       <div className='flex flex-row justify-between bg-dark-blue p-2'>
         <div className='flex flex-col space-y-2 p-3'>
           <Link href={`/movie/${movieId}`}>

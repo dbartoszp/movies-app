@@ -14,5 +14,5 @@ export default async function ListPage({
     data: { session },
   } = await supabase.auth.getSession();
 
-  return <ListInfo listId={params.listId} />;
+  return <ListInfo listId={params.listId} userId={session?.user.id} />;
 }

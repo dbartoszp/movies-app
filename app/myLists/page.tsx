@@ -1,4 +1,3 @@
-import { MyReviews } from '@/modules/accountPage/Dashboard/MyReviews/MyReviews';
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';

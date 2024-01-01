@@ -71,8 +71,8 @@ export const ReviewCreator = ({ movieId }: ReviewCreatorProps) => {
       <Text variant='subtitle'>
         {CHARACTER_LIMIT - writtenReview.length} characters left
       </Text>
-      <Text variant='subtitleXL'>Summary:</Text>
-      <div>
+      <div className='mt-4 flex flex-col space-y-2'>
+        <Text variant='subtitleXL'>Summary:</Text>
         <Text>
           {movie.data.fullTitle} - <strong>{rating}/10</strong>
         </Text>

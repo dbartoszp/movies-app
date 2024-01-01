@@ -3,11 +3,7 @@
 import { ListCreator } from '@/modules/lists/components/ListCreator/ListCreator';
 import { ListPreview } from '@/modules/lists/components/ListPreview/ListPreview';
 import { useAddToMoviesList } from '@/modules/lists/hooks/updateMoviesList/useAddToMoviesList/useAddToMoviesList';
-import { useDeleteFromMoviesList } from '@/modules/lists/hooks/updateMoviesList/useDeleteFromMoviesList/useDeleteFromMoviesList';
-import { useCreateMoviesList } from '@/modules/lists/hooks/useCreateMoviesList/useCreateMoviesList';
-import { useDeleteMoviesList } from '@/modules/lists/hooks/useDeleteMoviesList/useDeleteMoviesList';
 import { useGetMoviesListsByUserId } from '@/modules/lists/hooks/useGetListsByUserId/useGetMoviesListsByUserId';
-import { Button } from '@/modules/ui/Button/Button';
 import { Link } from '@/modules/ui/Button/Link';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 import { Modal } from '@/modules/ui/Modal/Modal';
@@ -29,11 +25,6 @@ export const MyLists = ({ userId, limit = 0 }: MyListsProps) => {
   const lists = useGetMoviesListsByUserId(userId);
   const { isOpen, close, changeOpenState } = useDisclosure();
 
-  const addMovieToList = useAddToMoviesList();
-  const handleAddMovieToList = () => {
-    addMovieToList.mutate({ movieIdToAdd: 'tt6166392', listId: 12 });
-  };
-
   if (lists.isLoading) return <Text>TODO SKELETON MYLISTS</Text>;
   if (!lists.isSuccess)
     return (
@@ -48,9 +39,6 @@ export const MyLists = ({ userId, limit = 0 }: MyListsProps) => {
 
   return (
     <div className='flex flex-col space-y-2'>
-      {/* <Button size='lg' variant='green' onClick={handleAddMovieToList}>
-        TEST ADD TO MOVIE LIST
-      </Button> */}
       <Text variant='title'>
         Create a new list, or browse your existing ones!
       </Text>
