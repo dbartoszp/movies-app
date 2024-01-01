@@ -7,6 +7,7 @@ import { MoviePreview } from '../MoviePreview/MoviePreview';
 import { useDeleteMoviesList } from '@/modules/lists/hooks/useDeleteMoviesList/useDeleteMoviesList';
 import { HiMiniTrash } from 'react-icons/hi2';
 import { Button } from '@/modules/ui/Button/Button';
+import { useDeleteFromMoviesList } from '@/modules/lists/hooks/updateMoviesList/useDeleteFromMoviesList/useDeleteFromMoviesList';
 
 type ListInfoProps = {
   listId: number;
@@ -17,8 +18,13 @@ export const ListInfo = ({ listId, userId = '' }: ListInfoProps) => {
   const list = useGetMoviesListByListId(listId);
 
   const deleteMoviesList = useDeleteMoviesList();
+  const deleteFromMoviesList = useDeleteFromMoviesList();
   const handleDeleteMoviesList = () => {
     deleteMoviesList.mutate(listId);
+  };
+
+  const handleDeleteFromMoviesList = (movieId: string) => {
+    deleteFromMoviesList.mutate({ movieIdToRemove: movieId, listId });
   };
 
   if (list.isLoading) return <Text>TODO SKELETON LISTINFO</Text>;
@@ -64,7 +70,7 @@ export const ListInfo = ({ listId, userId = '' }: ListInfoProps) => {
                   <MoviePreview movieId={movieId} />
                   {listData.userId === userId && (
                     <div
-                      onClick={handleDeleteMoviesList}
+                      onClick={() => handleDeleteFromMoviesList(movieId)}
                       className='my-auto cursor-pointer hover:bg-light-blue'
                     >
                       <span className='text-red-500'>

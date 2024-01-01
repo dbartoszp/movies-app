@@ -1,6 +1,4 @@
 import { ListInfo } from '@/modules/listPage/ListInfo/ListInfo';
-import { ListPreview } from '@/modules/lists/components/ListPreview/ListPreview';
-import { MovieInfo } from '@/modules/moviePage/MovieInfo';
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
 
