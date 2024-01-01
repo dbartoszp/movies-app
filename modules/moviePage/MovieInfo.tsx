@@ -19,6 +19,7 @@ import { Link } from '../ui/Button/Link';
 import { ListCreator } from '../lists/components/ListCreator/ListCreator';
 import { Text } from '../ui/Text/Text';
 import { AddToList } from '../lists/components/AddToList/AddToList';
+import { ReviewCreator } from '../reviewCreatorPage/ReviewCreator/ReviewCreator';
 
 type MoviePageProps = {
   movieId: string;
@@ -28,7 +29,16 @@ type MoviePageProps = {
 
 export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
   const movie = useGetMovieById(movieId);
-  const { isOpen, close, changeOpenState } = useDisclosure();
+  const {
+    isOpen: isReviewModalOpen,
+    close: closeReviewModal,
+    changeOpenState: changeReviewModalState,
+  } = useDisclosure();
+  const {
+    isOpen: isListModalOpen,
+    close: closeListModal,
+    changeOpenState: changeListModalState,
+  } = useDisclosure();
 
   if (movie.isLoading) {
     return <MoviePageSkeleton />;
@@ -63,15 +73,26 @@ export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
         )}
         {isAuth && (
           <>
-            <CreateReviewButton movieId={movieData.id} />
+            <div className='flex items-center justify-center'>
+              <Modal
+                openVariant='green'
+                title='Create your review'
+                openText='Review this movie'
+                onClose={closeReviewModal}
+                open={isReviewModalOpen}
+                onOpenChange={changeReviewModalState}
+              >
+                <ReviewCreator movieId={movieId} />
+              </Modal>
+            </div>
             <div className='flex items-center justify-center'>
               <Modal
                 openVariant='green'
                 title='Select a list to add this movie to'
                 openText='Add to a list'
-                onClose={close}
-                open={isOpen}
-                onOpenChange={changeOpenState}
+                onClose={closeListModal}
+                open={isListModalOpen}
+                onOpenChange={changeListModalState}
               >
                 <div className='flex flex-col space-y-12'>
                   <AddToList userId={userId} movieId={movieId} />

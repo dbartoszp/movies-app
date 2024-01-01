@@ -8,8 +8,8 @@ type ListCreatorProps = {
   userId: string;
 };
 
-const LIST_TITLE_LIMIT = 20;
-const LIST_DESCRIPTION_LIMIT = 40;
+const LIST_TITLE_LIMIT = 50;
+const LIST_DESCRIPTION_LIMIT = 100;
 
 export const ListCreator = ({ userId }: ListCreatorProps) => {
   const createMoviesList = useCreateMoviesList();
