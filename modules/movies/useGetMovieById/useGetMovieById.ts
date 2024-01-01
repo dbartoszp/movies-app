@@ -3,7 +3,7 @@ import { getMovieById } from './apiUseGetMovieById';
 
 export const useGetMovieById = (id: string) => {
   return useQuery({
-    queryKey: ['movie'],
+    queryKey: ['movie', id],
     queryFn: () => getMovieById(id),
     refetchOnWindowFocus: true,
   });
