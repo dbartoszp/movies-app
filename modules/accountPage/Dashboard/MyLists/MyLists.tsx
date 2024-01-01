@@ -19,8 +19,6 @@ export const MyLists = ({ userId, limit = 0 }: MyListsProps) => {
   const lists = useGetMoviesListsByUserId(userId);
   const { isOpen, close, changeOpenState } = useDisclosure();
 
-  return <MyListsSkeleton />;
-
   if (lists.isLoading) return <MyListsSkeleton />;
   if (!lists.isSuccess)
     return (

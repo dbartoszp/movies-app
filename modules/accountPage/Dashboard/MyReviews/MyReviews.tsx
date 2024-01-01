@@ -5,6 +5,7 @@ import { Link } from '@/modules/ui/Button/Link';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 import { ReviewPreview } from '@/modules/ui/ReviewPreview/ReviewPreview';
 import { Text } from '@/modules/ui/Text/Text';
+import { MyReviewsSkeleton } from './MyReviewsSkeleton/MyReviewsSkeleton';
 
 type MyReviewsProps = {
   userId: string;
@@ -14,7 +15,7 @@ type MyReviewsProps = {
 export const MyReviews = ({ userId, limit = 0 }: MyReviewsProps) => {
   const reviews = useGetReviewsByUserId(userId);
 
-  if (reviews.isLoading) return <Text>TODO SKELETON MY REVIEWS</Text>;
+  if (reviews.isLoading) return <MyReviewsSkeleton />;
   if (!reviews.isSuccess) return <ErrorMessage />;
 
   const sortedAndTrimmedReviews = reviews.data
