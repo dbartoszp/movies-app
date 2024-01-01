@@ -5,6 +5,7 @@ import { HiMiniTrash } from 'react-icons/hi2';
 import { useDeleteMovieReview } from '@/modules/reviews/hooks/useDeleteMovieReview/useDeleteMovieReview';
 import { Link } from '../Button/Link';
 import { MouseEvent } from 'react';
+import { ReviewPreviewSkeleton } from './ReviewPreviewSkeleton/ReviewPreviewSkeleton';
 
 type ReviewPreviewProps = {
   rating: number;
@@ -27,7 +28,7 @@ export const ReviewPreview = ({
     deleteReview.mutate(reviewId);
   };
 
-  if (movie.isLoading) return <Text>TODO REVIEWPREVIEW SKELETON</Text>;
+  if (movie.isLoading) return <ReviewPreviewSkeleton />;
   if (!movie.isSuccess) return <ErrorMessage />;
 
   return (
@@ -50,13 +51,9 @@ export const ReviewPreview = ({
           onClick={handleDeleteReview}
           className='my-auto cursor-pointer hover:bg-light-blue'
         >
-          {/* <Text variant='danger'>
-            <span className='max-h-10'> */}
           <span className='text-red-500'>
             <HiMiniTrash size={30} />
           </span>
-          {/* </span>
-          </Text> */}
         </div>
       </div>
     </div>

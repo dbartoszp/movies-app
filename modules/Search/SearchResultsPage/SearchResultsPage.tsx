@@ -7,13 +7,11 @@ import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 import { useSearchParams } from 'next/navigation';
 import { SearchResultsPageSkeleton } from './SearchResultsPageSkeleton/SearchResultsPageSkeleton';
 import { SearchResultsPageEmptyQuery } from './SearchResultsPageEmptyQuery/SearchResultsPageEmptyQuery';
-import { useState } from 'react';
 
 export const SearchResultsPage = () => {
   const searchParams = useSearchParams();
 
   const titleQuery = searchParams.get('query') || '';
-  const pageQuery = searchParams.get('page') || 1; //TODO in case of pagination
 
   const movies = useGetMoviesByTitle(titleQuery);
 
