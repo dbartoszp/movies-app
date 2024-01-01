@@ -13,9 +13,9 @@ export const useLogin = () => {
   return useMutation({
     mutationFn: (user: User) => login(user),
     onSuccess: () => {
-      router.refresh();
       toast.success('Succesfully logged in!');
       router.push('/account');
+      router.refresh();
     },
     onError: (err) => {
       console.log('ERROR', err);
