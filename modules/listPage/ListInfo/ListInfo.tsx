@@ -8,6 +8,7 @@ import { useDeleteMoviesList } from '@/modules/lists/hooks/useDeleteMoviesList/u
 import { HiMiniTrash } from 'react-icons/hi2';
 import { Button } from '@/modules/ui/Button/Button';
 import { useDeleteFromMoviesList } from '@/modules/lists/hooks/updateMoviesList/useDeleteFromMoviesList/useDeleteFromMoviesList';
+import { ListInfoSkeleton } from './ListInfoSkeleton/ListInfoSkeleton';
 
 type ListInfoProps = {
   listId: number;
@@ -27,7 +28,7 @@ export const ListInfo = ({ listId, userId = '' }: ListInfoProps) => {
     deleteFromMoviesList.mutate({ movieIdToRemove: movieId, listId });
   };
 
-  if (list.isLoading) return <Text>TODO SKELETON LISTINFO</Text>;
+  if (list.isLoading) return <ListInfoSkeleton />;
   if (!list.isSuccess) return <ErrorMessage message='Incorrect list id!' />;
 
   const listData = list.data;
