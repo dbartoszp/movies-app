@@ -6,6 +6,7 @@ import { Button } from '@/modules/ui/Button/Button';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 import { Text } from '@/modules/ui/Text/Text';
 import { HiPlus, HiPlusCircle } from 'react-icons/hi2';
+import { SingleListAddSkeleton } from './SingleListAddSkeleton/SingleListAddSkeleton';
 
 type SingleListAdd = {
   listId: number;
@@ -20,7 +21,7 @@ export const SingleListAdd = ({ listId, movieId }: SingleListAdd) => {
     addToList.mutate({ listId, movieIdToAdd: movieId });
   };
 
-  if (list.isLoading) return <Text>TODO SKELETON LIST</Text>;
+  if (list.isLoading) return <SingleListAddSkeleton />;
   if (!list.isSuccess) return <ErrorMessage />;
 
   return (
