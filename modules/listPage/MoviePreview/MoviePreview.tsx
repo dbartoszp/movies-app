@@ -5,6 +5,7 @@ import { Link } from '@/modules/ui/Button/Link';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 import { Text } from '@/modules/ui/Text/Text';
 import Image from 'next/image';
+import { MoviePreviewSkeleton } from './MoviePreviewSkeleton/MoviePreviewSkeleton';
 
 type MoviePreviewProps = {
   movieId: string;
@@ -12,7 +13,8 @@ type MoviePreviewProps = {
 
 export const MoviePreview = ({ movieId }: MoviePreviewProps) => {
   const movie = useGetMovieById(movieId);
-  if (movie.isLoading) return <Text>TODO SKELETON MOVIEPREVIEW</Text>;
+
+  if (movie.isLoading) return <MoviePreviewSkeleton />;
   if (!movie.isSuccess)
     return <ErrorMessage message='Could not load the movie' />;
 
