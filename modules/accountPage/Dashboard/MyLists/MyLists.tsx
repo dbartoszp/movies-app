@@ -2,19 +2,13 @@
 
 import { ListCreator } from '@/modules/lists/components/ListCreator/ListCreator';
 import { ListPreview } from '@/modules/lists/components/ListPreview/ListPreview';
-import { useAddToMoviesList } from '@/modules/lists/hooks/updateMoviesList/useAddToMoviesList/useAddToMoviesList';
 import { useGetMoviesListsByUserId } from '@/modules/lists/hooks/useGetListsByUserId/useGetMoviesListsByUserId';
 import { Link } from '@/modules/ui/Button/Link';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 import { Modal } from '@/modules/ui/Modal/Modal';
 import { useDisclosure } from '@/modules/ui/Modal/useDisclosure/useDisclosure';
 import { Text } from '@/modules/ui/Text/Text';
-
-const testMoviesList = {
-  listName: 'TestLista',
-  description: 'lista do testowania',
-  id: 12,
-};
+import { MyListsSkeleton } from './MyListsSkeleton/MyListsSkeleton';
 
 type MyListsProps = {
   userId: string;
@@ -25,7 +19,9 @@ export const MyLists = ({ userId, limit = 0 }: MyListsProps) => {
   const lists = useGetMoviesListsByUserId(userId);
   const { isOpen, close, changeOpenState } = useDisclosure();
 
-  if (lists.isLoading) return <Text>TODO SKELETON MYLISTS</Text>;
+  return <MyListsSkeleton />;
+
+  if (lists.isLoading) return <MyListsSkeleton />;
   if (!lists.isSuccess)
     return (
       <ErrorMessage message='Could not fetch your lists. Please come back later!' />
