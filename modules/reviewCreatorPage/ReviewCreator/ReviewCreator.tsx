@@ -6,6 +6,7 @@ import { Button } from '@/modules/ui/Button/Button';
 import { Text } from '@/modules/ui/Text/Text';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
 import { useGetMovieById } from '@/modules/movies/useGetMovieById/useGetMovieById';
+import { ReviewCreatorSkeleton } from './ReviewCreatorSkeleton/ReviewCreatorSkeleton';
 
 const MAX_RATING = 10;
 const CHARACTER_LIMIT = 100;
@@ -37,7 +38,7 @@ export const ReviewCreator = ({ movieId }: ReviewCreatorProps) => {
     setWrittenReview(event.target.value);
   };
 
-  if (movie.isLoading) return <Text>TODO SKELETON REVIEW CREATOR</Text>;
+  if (movie.isLoading) return <ReviewCreatorSkeleton />;
   if (!movie.isSuccess) return <ErrorMessage />;
 
   return (
