@@ -1,0 +1,158 @@
+"filename", "language", "JSON with Comments", "Markdown", "JavaScript", "TypeScript", "JSON", "TypeScript JSX", "CSS", "comment", "blank", "total"
+"c:\Users\Bartuś\Desktop\repos\movies-app\.eslintrc.json", "JSON with Comments", 3, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"c:\Users\Bartuś\Desktop\repos\movies-app\.prettierrc.json", "JSON", 0, 0, 0, 0, 8, 0, 0, 0, 1, 9
+"c:\Users\Bartuś\Desktop\repos\movies-app\README.md", "Markdown", 0, 23, 0, 0, 0, 0, 0, 0, 14, 37
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\ReactQueryProvider.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 18, 0, 0, 4, 22
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\account\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 25, 0, 0, 4, 29
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\actor\[actorId]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 36, 0, 0, 6, 42
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\auth\callback\route.ts", "TypeScript", 0, 0, 0, 41, 0, 0, 0, 0, 5, 46
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\globals.css", "CSS", 0, 0, 0, 0, 0, 0, 23, 1, 4, 28
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 56, 0, 0, 4, 60
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\list\[listId]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 14, 0, 0, 3, 17
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\login\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 18, 0, 0, 2, 20
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\movie\[movieId]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 22, 0, 0, 3, 25
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\movies\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 10, 0, 0, 2, 12
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\myLists\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 24, 0, 0, 4, 28
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\myReviews\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 24, 0, 0, 4, 28
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 19, 0, 0, 2, 21
+"c:\Users\Bartuś\Desktop\repos\movies-app\app\unauthenticated\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 14, 0, 0, 3, 17
+"c:\Users\Bartuś\Desktop\repos\movies-app\middleware.ts", "TypeScript", 0, 0, 0, 8, 0, 0, 0, 0, 2, 10
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\Footer\Footer.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 30, 0, 0, 2, 32
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\Header\Header.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 29, 0, 4, 5, 38
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\HomepageBanner\HomepageBanner.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 28, 0, 0, 2, 30
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\Navbar\Navbar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 48, 0, 0, 11, 59
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\Search\SearchResultsPage\SearchResultsPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 26, 0, 0, 7, 33
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\Search\SearchResultsPage\SearchResultsPageEmptyQuery\SearchResultsPageEmptyQuery.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 8, 0, 0, 2, 10
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\Search\SearchResultsPage\SearchResultsPageSkeleton\SearchResultsPageSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 8, 0, 0, 2, 10
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\Search\Searchbar\Searchbar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 29, 0, 0, 4, 33
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\TopMovies\TopMoviesHomepage\PosterLinkList\PosterLinkList.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 20, 0, 0, 4, 24
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\TopMovies\TopMoviesHomepage\PosterLinkList\PosterLinkListSkeleton\PosterLinkListSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 13, 0, 0, 2, 15
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\TopMovies\TopMoviesHomepage\PosterLinkList\PosterLinkListSkeleton\PosterLinkSkeleton\PosterLinkSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 4, 0, 0, 2, 6
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\TopMovies\TopMoviesHomepage\PosterLinkList\PosterLink\PosterLink.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 26, 0, 0, 4, 30
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\TopMovies\TopMoviesHomepage\TopMoviesHomepage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 31, 0, 0, 4, 35
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\accountPage\Dashboard\Dashboard.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 35, 0, 0, 4, 39
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\accountPage\Dashboard\MyLists\MyLists.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 75, 0, 0, 7, 82
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\accountPage\Dashboard\MyLists\MyListsSkeleton\MyListsSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 10, 0, 0, 2, 12
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\accountPage\Dashboard\MyReviews\MyReviews.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 55, 0, 0, 7, 62
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\accountPage\Dashboard\MyReviews\MyReviewsSkeleton\MyReviewsSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 10, 0, 0, 2, 12
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\actorPage\ActorImage\ActorImage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 18, 0, 0, 3, 21
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\actorPage\ActorKnownFor\ActorKnownFor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 35, 0, 0, 3, 38
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\actorPage\ActorKnownFor\KnownForSingleMovie\KnownForSingleMovie.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 28, 0, 0, 4, 32
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\actorPage\ActorMainInfo\ActorDatesBox\ActorDatesBox.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 14, 0, 0, 3, 17
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\actorPage\ActorMainInfo\ActorMainInfo.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 36, 0, 0, 3, 39
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\actorPage\ActorPageSkeleton\ActorImageSkeleton\ActorImageSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 8, 0, 0, 2, 10
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\actorPage\ActorPageSkeleton\ActorInfoSkeleton\ActorInfoSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 9, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\actorPage\ActorPageSkeleton\ActorPageSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 12, 0, 0, 2, 14
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\actors\schemas\useGetActor.schema.ts", "TypeScript", 0, 0, 0, 31, 0, 0, 0, 0, 3, 34
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\actors\useGetActorById\apiUseGetActorById.ts", "TypeScript", 0, 0, 0, 12, 0, 0, 0, 0, 4, 16
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\actors\useGetActorById\useGetActorById.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\auth\Forms\FormRow\FormRow.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 18, 0, 0, 3, 21
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\auth\Forms\LoginForm\LoginForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 61, 0, 1, 5, 67
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\auth\Forms\RegisterForm\RegisterForm.schema.ts", "TypeScript", 0, 0, 0, 14, 0, 0, 0, 0, 3, 17
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\auth\Forms\RegisterForm\RegisterForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 111, 0, 1, 8, 120
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\auth\LogoutButton\LogoutButton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 17, 0, 0, 3, 20
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\listPage\ListInfo\ListInfo.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 81, 0, 0, 9, 90
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\listPage\ListInfo\ListInfoSkeleton\ListInfoSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 20, 0, 0, 2, 22
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\listPage\MoviePreview\MoviePreview.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 36, 0, 0, 6, 42
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\listPage\MoviePreview\MoviePreviewSkeleton\MoviePreviewSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 4, 0, 0, 2, 6
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\components\AddToList\AddToList.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 25, 0, 0, 5, 30
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\components\AddToList\SingleListAdd\SingleListAdd.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 36, 0, 0, 7, 43
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\components\AddToList\SingleListAdd\SingleListAddSkeleton\SingleListAddSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 4, 0, 0, 2, 6
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\components\ListCreator\ListCreator.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 85, 0, 0, 7, 92
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\components\ListPreview\ListPreview.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 59, 0, 0, 5, 64
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\components\ListPreview\MoviePreviewSmall\MoviePreviewSmall.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 18, 0, 0, 5, 23
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\components\ListPreview\MoviePreviewSmall\MoviePreviewSmallSkeleton\MoviePreviewSmallSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 4, 0, 0, 2, 6
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\moviesListSchema.schema.ts", "TypeScript", 0, 0, 0, 10, 0, 0, 0, 0, 3, 13
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\updateMoviesList\useAddToMoviesList\apiUseAddToMoviesList.ts", "TypeScript", 0, 0, 0, 33, 0, 0, 0, 0, 10, 43
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\updateMoviesList\useAddToMoviesList\useAddToMoviesList.ts", "TypeScript", 0, 0, 0, 23, 0, 0, 0, 0, 3, 26
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\updateMoviesList\useDeleteFromMoviesList\apiDeleteFromMoviesList.ts", "TypeScript", 0, 0, 0, 31, 0, 0, 0, 0, 10, 41
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\updateMoviesList\useDeleteFromMoviesList\useDeleteFromMoviesList.ts", "TypeScript", 0, 0, 0, 26, 0, 0, 0, 0, 3, 29
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\useCreateMoviesList\apiUseCreateMoviesList.ts", "TypeScript", 0, 0, 0, 19, 0, 0, 0, 0, 4, 23
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\useCreateMoviesList\useCreateMoviesList.ts", "TypeScript", 0, 0, 0, 28, 0, 0, 0, 0, 3, 31
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\useDeleteMoviesList\apiUseDeleteMoviesList.ts", "TypeScript", 0, 0, 0, 12, 0, 0, 0, 0, 4, 16
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\useDeleteMoviesList\useDeleteMoviesList.ts", "TypeScript", 0, 0, 0, 19, 0, 0, 0, 0, 3, 22
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\useGetListsByUserId\apiUseGetMoviesListsByUserId.ts", "TypeScript", 0, 0, 0, 14, 0, 0, 0, 0, 4, 18
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\useGetListsByUserId\useGetMoviesListsByUserId.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\useGetSingleListByListId\apiUseGetMoviesListByListId.ts", "TypeScript", 0, 0, 0, 16, 0, 0, 0, 1, 5, 22
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\lists\hooks\useGetSingleListByListId\useGetMoviesListByListId.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\BoxOffice\BoxOffice.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 37, 0, 0, 4, 41
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\CreateReviewButton\CreateReviewButton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 13, 0, 0, 3, 16
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\FullCastContainer\FullCastContainer.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 23, 0, 0, 4, 27
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\FullCastContainer\SingleCastBox\SingleCastBox.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 18, 0, 0, 3, 21
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\GenreList\GenreList.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 17, 0, 0, 4, 21
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\GenreList\SingleGenreBox\SingleGenreBox.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 11, 0, 0, 4, 15
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\LatestReviews\LatestReviews.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 33, 0, 0, 5, 38
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\MovieAwards\MovieAwardsContainer.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 19, 0, 0, 5, 24
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\MovieAwards\SingleMovieAward\SingleMovieAward.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 15, 0, 0, 5, 20
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\MovieDescription\MovieDescription.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 13, 0, 0, 3, 16
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\MovieImage\MovieImage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 18, 0, 0, 3, 21
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\MovieInfo.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 138, 0, 0, 12, 150
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\MovieMainInfo\MovieMainInfo.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 40, 0, 0, 4, 44
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\MoviePageSkeleton\MovieImageSkeleton\MovieImageSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 8, 0, 0, 2, 10
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\MoviePageSkeleton\MovieInfoSkeleton\MovieInfoSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 9, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\MoviePageSkeleton\MoviePageSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 12, 0, 0, 2, 14
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\MovieRatings\MovieRatings.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 43, 0, 0, 3, 46
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\SimilarMovies\SimilarMovies.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 27, 0, 0, 6, 33
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\moviePage\SimilarMovies\SingleSimilarMovie\SingleSimilarMovie.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 29, 0, 0, 5, 34
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\MoviesList\MoviesList.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 32, 0, 0, 4, 36
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\schemas\useGetAllPopularMovies.schema.ts", "TypeScript", 0, 0, 0, 18, 0, 0, 0, 0, 2, 20
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\schemas\useGetMovie.schema.ts", "TypeScript", 0, 0, 0, 71, 0, 0, 0, 0, 6, 77
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\schemas\useGetMoviesByTitle.schema.ts", "TypeScript", 0, 0, 0, 15, 0, 0, 0, 0, 4, 19
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\useGetAllPopularMoviesIDPoster\apiUseGetAllPopularMoviesIDPoster.ts", "TypeScript", 0, 0, 0, 18, 0, 0, 0, 0, 4, 22
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\useGetAllPopularMoviesIDPoster\hooks\useGetAllPopularMoviesIDPoster.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\useGetAllPopularMovies\apiUseGetAllPopularMovies.ts", "TypeScript", 0, 0, 0, 13, 0, 0, 0, 0, 4, 17
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\useGetAllPopularMovies\hooks\useGetAllPopularMovies.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\useGetLimitedPopularMoviesIDPoster\apiUseGetLimitedPopularMoviesIDPoster.ts", "TypeScript", 0, 0, 0, 19, 0, 0, 0, 0, 5, 24
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\useGetLimitedPopularMoviesIDPoster\useGetLimitedPopularMoviesIDPoster.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\useGetMovieById\apiUseGetMovieById.ts", "TypeScript", 0, 0, 0, 12, 0, 0, 0, 0, 4, 16
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\useGetMovieById\useGetMovieById.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\useGetMoviesByTitle\apiUseGetMoviesByTitle.ts", "TypeScript", 0, 0, 0, 23, 0, 0, 0, 0, 5, 28
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\movies\useGetMoviesByTitle\useGetMoviesByTitle.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\navigation\hooks\useQueryString\useQueryString.ts", "TypeScript", 0, 0, 0, 25, 0, 0, 0, 0, 7, 32
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\navigation\hooks\useRouteChanged\useRouteChanged.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 12, 0, 0, 4, 16
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviewCreatorPage\RatingButton\RatingButton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 24, 0, 0, 4, 28
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviewCreatorPage\ReviewCreator\ReviewCreator.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 90, 0, 0, 8, 98
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviewCreatorPage\ReviewCreator\ReviewCreatorSkeleton\ReviewCreatorSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 9, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviews\hooks\reviewsSchema.schema.ts", "TypeScript", 0, 0, 0, 10, 0, 0, 0, 0, 3, 13
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviews\hooks\useCreateMovieReview\apiCreateMovieReview.ts", "TypeScript", 0, 0, 0, 35, 0, 0, 0, 0, 6, 41
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviews\hooks\useCreateMovieReview\useCreateMovieReview.ts", "TypeScript", 0, 0, 0, 28, 0, 0, 0, 0, 4, 32
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviews\hooks\useDeleteMovieReview\apiUseDeleteMovieReview.ts", "TypeScript", 0, 0, 0, 12, 0, 0, 0, 0, 4, 16
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviews\hooks\useDeleteMovieReview\useDeleteMovieReview.ts", "TypeScript", 0, 0, 0, 19, 0, 0, 0, 0, 3, 22
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviews\hooks\useGetLatestReviews\apiUseGetLatesReviews.ts", "TypeScript", 0, 0, 0, 14, 0, 0, 0, 0, 5, 19
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviews\hooks\useGetLatestReviews\useGetLatestReviews.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviews\hooks\useGetMovieAppReviewInfo\apiUseGetMovieAppReviewInfo.ts", "TypeScript", 0, 0, 0, 22, 0, 0, 0, 0, 7, 29
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviews\hooks\useGetMovieAppReviewInfo\useGetMovieAppReviewInfo.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviews\hooks\useGetReviewsByUserId\apiUseGetReviewsByUserId.ts", "TypeScript", 0, 0, 0, 16, 0, 0, 0, 0, 4, 20
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviews\hooks\useGetReviewsByUserId\useGetReviewsByUserId.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 2, 11
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\reviews\utils\formatDate.ts", "TypeScript", 0, 0, 0, 15, 0, 0, 0, 0, 4, 19
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\Button\BaseButton\BaseButton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 61, 0, 0, 8, 69
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\Button\Button.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 16, 0, 0, 4, 20
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\Button\Link.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 12, 0, 0, 3, 15
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\Drawer\Drawer.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 39, 0, 0, 4, 43
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\Drawer\DrawerItem\DrawerItem.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 17, 0, 0, 3, 20
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\ErrorMessage\ErrorMessage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 15, 0, 0, 3, 18
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\GoBackButton\GoBackButton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 16, 0, 0, 4, 20
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\Modal\Modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 61, 0, 0, 4, 65
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\Modal\useDisclosure\useDisclosure.ts", "TypeScript", 0, 0, 0, 17, 0, 0, 0, 0, 3, 20
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\ReviewPreview\ReviewPreview.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 67, 0, 0, 6, 73
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\ReviewPreview\ReviewPreviewSkeleton\ReviewPreviewSkeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 4, 0, 0, 2, 6
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\Text\Text.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 26, 0, 0, 7, 33
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\ui\UnauthorizedBox\UnauthorizedBox.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 16, 0, 0, 2, 18
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\users\hooks\useLogin\apiUseLogin.ts", "TypeScript", 0, 0, 0, 14, 0, 0, 0, 0, 4, 18
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\users\hooks\useLogin\useLogin.ts", "TypeScript", 0, 0, 0, 23, 0, 0, 0, 0, 3, 26
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\users\hooks\useLogout\apiUseLogout.ts", "TypeScript", 0, 0, 0, 6, 0, 0, 0, 0, 3, 9
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\users\hooks\useLogout\useLogout.ts", "TypeScript", 0, 0, 0, 21, 0, 0, 0, 0, 3, 24
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\users\hooks\useSignup\apiUseSignup.ts", "TypeScript", 0, 0, 0, 23, 0, 0, 0, 0, 5, 28
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\users\hooks\useSignup\useSignup.ts", "TypeScript", 0, 0, 0, 26, 0, 0, 0, 0, 4, 30
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\users\hooks\useUser\useUser.ts", "TypeScript", 0, 0, 0, 8, 0, 0, 0, 0, 2, 10
+"c:\Users\Bartuś\Desktop\repos\movies-app\modules\users\utils\getCurrentUser\getCurrentUser.ts", "TypeScript", 0, 0, 0, 8, 0, 0, 0, 0, 2, 10
+"c:\Users\Bartuś\Desktop\repos\movies-app\next.config.js", "JavaScript", 0, 0, 6, 0, 0, 0, 0, 1, 1, 8
+"c:\Users\Bartuś\Desktop\repos\movies-app\package-lock.json", "JSON", 0, 0, 0, 0, 9177, 0, 0, 0, 1, 9178
+"c:\Users\Bartuś\Desktop\repos\movies-app\package.json", "JSON", 0, 0, 0, 0, 46, 0, 0, 0, 1, 47
+"c:\Users\Bartuś\Desktop\repos\movies-app\postcss.config.js", "JavaScript", 0, 0, 6, 0, 0, 0, 0, 0, 1, 7
+"c:\Users\Bartuś\Desktop\repos\movies-app\seeds\movies\clearMovies.js", "JavaScript", 0, 0, 5, 0, 0, 0, 0, 0, 3, 8
+"c:\Users\Bartuś\Desktop\repos\movies-app\seeds\movies\moviesSeeder.mjs", "JavaScript", 0, 0, 65, 0, 0, 0, 0, 0, 7, 72
+"c:\Users\Bartuś\Desktop\repos\movies-app\services\supabase.mjs", "JavaScript", 0, 0, 6, 0, 0, 0, 0, 0, 1, 7
+"c:\Users\Bartuś\Desktop\repos\movies-app\tailwind.config.ts", "TypeScript", 0, 0, 0, 24, 0, 0, 0, 1, 1, 26
+"c:\Users\Bartuś\Desktop\repos\movies-app\tsconfig.json", "JSON with Comments", 27, 0, 0, 0, 0, 0, 0, 0, 1, 28
+"Total", "-", 30, 23, 88, 991, 9231, 2544, 23, 10, 596, 13536

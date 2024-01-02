@@ -104,12 +104,7 @@ export const RegisterForm = () => {
         </FormRow>
 
         <FormRow>
-          <Button
-            // disabled={login.isLoading}
-            variant='green'
-            size='lg'
-            onClick={onSubmit}
-          >
+          <Button variant='green' size='lg' onClick={onSubmit}>
             REGISTER
           </Button>
         </FormRow>

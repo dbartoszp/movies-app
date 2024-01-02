@@ -4,13 +4,7 @@ import { Link } from '../ui/Button/Link';
 import Navbar from '../Navbar/Navbar';
 import { Text } from '../ui/Text/Text';
 
-// const iconSize = 30;
-
 export const Header = () => {
-  //   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
-
-  //   const onMobileToggleMenu = () =>
-  //     setIsOpenMobileMenu((prevState) => !prevState);
   return (
     <header className='mb-12'>
       <Navbar>

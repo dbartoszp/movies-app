@@ -30,7 +30,6 @@ export const LoginForm = () => {
             className='rounded-sm px-3 py-1 text-dark-blue'
             type='email'
             id='email'
-            value='bitwa@gmail.com' //!! for testing purposes
             {...register('email', {
               required: true,
             })}
@@ -41,7 +40,6 @@ export const LoginForm = () => {
             className='rounded-sm px-3 py-1 text-dark-blue'
             type='password'
             id='password'
-            value='Mikro123' //!! for testing purposes
             {...register('password', {
               required: true,
             })}
@@ -51,12 +49,7 @@ export const LoginForm = () => {
           )}
         </FormRow>
         <FormRow>
-          <Button
-            // disabled={login.isLoading}
-            variant='green'
-            size='lg'
-            onClick={onSubmit}
-          >
+          <Button variant='green' size='lg' onClick={onSubmit}>
             SIGN IN
           </Button>
         </FormRow>
