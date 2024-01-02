@@ -20,6 +20,7 @@ import { ListCreator } from '../lists/components/ListCreator/ListCreator';
 import { Text } from '../ui/Text/Text';
 import { AddToList } from '../lists/components/AddToList/AddToList';
 import { ReviewCreator } from '../reviewCreatorPage/ReviewCreator/ReviewCreator';
+import { useGetMovieAppReviewInfo } from '../reviews/hooks/useGetMovieAppReviewInfo/useGetMovieAppReviewInfo';
 
 type MoviePageProps = {
   movieId: string;
@@ -29,6 +30,8 @@ type MoviePageProps = {
 
 export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
   const movie = useGetMovieById(movieId);
+  const movieAppReviewInfo = useGetMovieAppReviewInfo(movieId);
+
   const {
     isOpen: isReviewModalOpen,
     close: closeReviewModal,
@@ -50,6 +53,13 @@ export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
     );
   }
 
+  if (movieAppReviewInfo.isLoading) return <MoviePageSkeleton />;
+  if (!movieAppReviewInfo.isSuccess) {
+    console.log(movieAppReviewInfo.error);
+    return (
+      <ErrorMessage message="It looks like we don't have data about this title. We apologize for any inconvenience!" />
+    );
+  }
   const movieData = movie.data;
 
   return (
@@ -114,8 +124,8 @@ export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
         <MovieRatings
           imDbRating={movieData.imDbRating || 'Not yet rated'}
           imDbRatingVotes={movieData.imDbRatingVotes || 'Not yet rated'}
-          // moviesappRating={movieData.moviesappRating}
-          // moviesappReviewCount={movieData.moviesappReviewCount}
+          moviesappRating={movieAppReviewInfo.data.averageRating || 0}
+          moviesappReviewCount={movieAppReviewInfo.data.count}
         />
         <FullCastContainer starList={movieData.starList} />
         <BoxOffice boxOffice={movieData.boxOffice} />
