@@ -28,12 +28,11 @@ export const MovieRatings = ({
       </div>
       {moviesappReviewCount > 0 ? (
         <>
-          {' '}
-          <div className='flex justify-between'>
+          <div className='mb-3 flex justify-around'>
             <Text variant='description'>moviesApp average rating:</Text>
-            <Text variant='green'>{moviesappRating}</Text>
+            <Text variant='green'>{Number(moviesappRating.toFixed(1))}</Text>
           </div>
-          <div className='flex justify-between'>
+          <div className='mb-3 flex justify-around'>
             <Text variant='description'>moviesApp rating votes:</Text>
             <Text variant='green'>{moviesappReviewCount}</Text>
           </div>

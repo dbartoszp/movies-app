@@ -38,6 +38,7 @@ export const MyReviews = ({ userId, limit = 0 }: MyReviewsProps) => {
             writtenReview={review.writtenReview}
             movieId={review.movieId}
             reviewId={review.id}
+            date={review.created_at}
           />
         ))}
         {limit > 0 && reviews.data.length > sortedAndTrimmedReviews.length && (

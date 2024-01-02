@@ -12,7 +12,6 @@ import { GenreList } from '@/modules/moviePage/GenreList/GenreList';
 import { BoxOffice } from '@/modules/moviePage/BoxOffice/BoxOffice';
 import { SimilarMovies } from '@/modules/moviePage/SimilarMovies/SimilarMovies';
 import { ErrorMessage } from '@/modules/ui/ErrorMessage/ErrorMessage';
-import { CreateReviewButton } from '@/modules/moviePage/CreateReviewButton/CreateReviewButton';
 import { Modal } from '@/modules/ui/Modal/Modal';
 import { useDisclosure } from '@/modules/ui/Modal/useDisclosure/useDisclosure';
 import { Link } from '../ui/Button/Link';
@@ -21,6 +20,8 @@ import { Text } from '../ui/Text/Text';
 import { AddToList } from '../lists/components/AddToList/AddToList';
 import { ReviewCreator } from '../reviewCreatorPage/ReviewCreator/ReviewCreator';
 import { useGetMovieAppReviewInfo } from '../reviews/hooks/useGetMovieAppReviewInfo/useGetMovieAppReviewInfo';
+import { useGetLatestReviews } from '../reviews/hooks/useGetLatestReviews/useGetLatestReviews';
+import { LatestReviews } from './LatestReviews/LatestReviews';
 
 type MoviePageProps = {
   movieId: string;
@@ -28,9 +29,12 @@ type MoviePageProps = {
   userId?: string;
 };
 
+const REVIEW_COUNT = 2;
+
 export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
   const movie = useGetMovieById(movieId);
   const movieAppReviewInfo = useGetMovieAppReviewInfo(movieId);
+  const reviews = useGetLatestReviews(movieId, REVIEW_COUNT);
 
   const {
     isOpen: isReviewModalOpen,
@@ -58,6 +62,14 @@ export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
     console.log(movieAppReviewInfo.error);
     return (
       <ErrorMessage message="It looks like we don't have data about this title. We apologize for any inconvenience!" />
+    );
+  }
+
+  if (reviews.isLoading) return <MoviePageSkeleton />;
+  if (!reviews.isSuccess) {
+    console.log(reviews.error);
+    return (
+      <ErrorMessage message='There was an error with fetching reviews for this movie. Please come back later!' />
     );
   }
   const movieData = movie.data;
@@ -129,6 +141,7 @@ export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
         />
         <FullCastContainer starList={movieData.starList} />
         <BoxOffice boxOffice={movieData.boxOffice} />
+        <LatestReviews reviews={reviews.data} />
         <SimilarMovies similars={movieData.similars} />
       </div>
     </main>

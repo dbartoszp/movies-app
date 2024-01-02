@@ -6,12 +6,14 @@ import { useDeleteMovieReview } from '@/modules/reviews/hooks/useDeleteMovieRevi
 import { Link } from '../Button/Link';
 import { MouseEvent } from 'react';
 import { ReviewPreviewSkeleton } from './ReviewPreviewSkeleton/ReviewPreviewSkeleton';
+import { formatDate } from '@/modules/reviews/utils/formatDate';
 
 type ReviewPreviewProps = {
   rating: number;
   writtenReview: string;
   movieId: string;
   reviewId: number;
+  date: string;
 };
 
 export const ReviewPreview = ({
@@ -19,9 +21,11 @@ export const ReviewPreview = ({
   writtenReview,
   movieId,
   reviewId,
+  date,
 }: ReviewPreviewProps) => {
   const movie = useGetMovieById(movieId);
   const deleteReview = useDeleteMovieReview();
+  const formattedDate = formatDate(date);
 
   const handleDeleteReview = (e: MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
@@ -45,6 +49,9 @@ export const ReviewPreview = ({
             <div className='overflow-none break-all italic'>
               <Text variant='subtitle'>&quot;{writtenReview}&quot;</Text>
             </div>
+            <Text variant='description'>
+              <span className='text-xs'>{formattedDate}</span>
+            </Text>
           </Link>
         </div>
         <div
