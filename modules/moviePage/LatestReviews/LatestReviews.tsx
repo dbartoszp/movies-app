@@ -7,7 +7,7 @@ type Review = {
   movieId: string;
   rating: number;
   writtenReview: string;
-  createdAt: string;
+  created_at: string;
 };
 
 type LatestReviewsProps = {
@@ -28,7 +28,7 @@ export const LatestReviews: React.FC<LatestReviewsProps> = ({ reviews }) => {
             writtenReview={review.writtenReview}
             movieId={review.movieId}
             reviewId={review.id}
-            date={review.createdAt}
+            date={review.created_at}
           />
         ))}
       </div>

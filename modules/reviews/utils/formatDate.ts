@@ -7,7 +7,12 @@ export const formatDate = (dateToFormat: string) => {
     minute: '2-digit',
     hour12: false,
   };
-  return new Date(dateToFormat)
-    .toLocaleString('en-GB', options)
-    .replace(/\//g, '-');
+
+  const date = new Date(dateToFormat);
+
+  if (isNaN(date.getTime())) {
+    return 'Invalid date';
+  }
+
+  return date.toLocaleString('en-GB', options).replace(/\//g, '-');
 };
