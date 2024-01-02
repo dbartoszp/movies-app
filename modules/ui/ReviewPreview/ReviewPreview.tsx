@@ -14,6 +14,7 @@ type ReviewPreviewProps = {
   movieId: string;
   reviewId: number;
   date: string;
+  deletable?: boolean;
 };
 
 export const ReviewPreview = ({
@@ -22,6 +23,7 @@ export const ReviewPreview = ({
   movieId,
   reviewId,
   date,
+  deletable = false,
 }: ReviewPreviewProps) => {
   const movie = useGetMovieById(movieId);
   const deleteReview = useDeleteMovieReview();
@@ -54,14 +56,16 @@ export const ReviewPreview = ({
             </Text>
           </Link>
         </div>
-        <div
-          onClick={handleDeleteReview}
-          className='my-auto cursor-pointer hover:bg-light-blue'
-        >
-          <span className='text-red-500'>
-            <HiMiniTrash size={30} />
-          </span>
-        </div>
+        {deletable && (
+          <div
+            onClick={handleDeleteReview}
+            className='my-auto cursor-pointer hover:bg-light-blue'
+          >
+            <span className='text-red-500'>
+              <HiMiniTrash size={30} />
+            </span>
+          </div>
+        )}
       </div>
     </div>
   );
