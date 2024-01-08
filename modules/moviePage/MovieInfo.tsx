@@ -51,7 +51,6 @@ export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
     return <MoviePageSkeleton />;
   }
   if (!movie.isSuccess) {
-    console.log(movie.error);
     return (
       <ErrorMessage message="It looks like we don't have data about this title. We apologize for any inconvenience!" />
     );
@@ -59,7 +58,6 @@ export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
 
   if (movieAppReviewInfo.isLoading) return <MoviePageSkeleton />;
   if (!movieAppReviewInfo.isSuccess) {
-    console.log(movieAppReviewInfo.error);
     return (
       <ErrorMessage message="It looks like we don't have data about this title. We apologize for any inconvenience!" />
     );
@@ -67,7 +65,6 @@ export const MovieInfo = ({ movieId, isAuth, userId = '' }: MoviePageProps) => {
 
   if (reviews.isLoading) return <MoviePageSkeleton />;
   if (!reviews.isSuccess) {
-    console.log(reviews.error);
     return (
       <ErrorMessage message='There was an error with fetching reviews for this movie. Please come back later!' />
     );
