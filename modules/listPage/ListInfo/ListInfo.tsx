@@ -34,7 +34,7 @@ export const ListInfo = ({ listId, userId = '' }: ListInfoProps) => {
   const listData = list.data;
 
   return (
-    <div className='flex flex-row items-center justify-center p-2 pb-72  md:min-h-screen'>
+    <div className='flex flex-row items-center justify-center p-2 pb-72 md:min-h-screen'>
       <div className='mt-12 flex flex-col space-y-12 bg-dark-blue px-6 py-4 md:px-36 md:py-12'>
         <div className='flex flex-row items-center justify-between'>
           <div className='mb-7 flex flex-col space-y-4'>
