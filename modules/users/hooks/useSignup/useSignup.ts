@@ -19,7 +19,9 @@ export const useSignup = () => {
       console.log(user);
       router.refresh();
       router.push('/account');
-      toast.success('Succesfully created an account!');
+      toast.success(
+        'Succesfully created an account! Go to your email to confirm your signup.'
+      );
     },
     onError: (err) => {
       console.log('ERROR', err);
