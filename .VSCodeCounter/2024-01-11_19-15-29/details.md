@@ -1,10 +1,10 @@
 # Details
 
-Date : 2024-01-02 15:41:59
+Date : 2024-01-11 19:15:29
 
-Directory c:\\Users\\Bartuś\\Desktop\\repos\\movies-app
+Directory c:\\Users\\Bartuś\\Desktop\\repos\\moviesapptest\\movies-app\\movies-app
 
-Total : 156 files,  12930 codes, 10 comments, 596 blanks, all 13536 lines
+Total : 152 files,  12805 codes, 3 comments, 579 blanks, all 13387 lines
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
@@ -30,8 +30,8 @@ Total : 156 files,  12930 codes, 10 comments, 596 blanks, all 13536 lines
 | [app/unauthenticated/page.tsx](/app/unauthenticated/page.tsx) | TypeScript JSX | 14 | 0 | 3 | 17 |
 | [middleware.ts](/middleware.ts) | TypeScript | 8 | 0 | 2 | 10 |
 | [modules/Footer/Footer.tsx](/modules/Footer/Footer.tsx) | TypeScript JSX | 30 | 0 | 2 | 32 |
-| [modules/Header/Header.tsx](/modules/Header/Header.tsx) | TypeScript JSX | 29 | 4 | 5 | 38 |
-| [modules/HomepageBanner/HomepageBanner.tsx](/modules/HomepageBanner/HomepageBanner.tsx) | TypeScript JSX | 28 | 0 | 2 | 30 |
+| [modules/Header/Header.tsx](/modules/Header/Header.tsx) | TypeScript JSX | 29 | 0 | 3 | 32 |
+| [modules/HomepageBanner/HomepageBanner.tsx](/modules/HomepageBanner/HomepageBanner.tsx) | TypeScript JSX | 35 | 0 | 2 | 37 |
 | [modules/Navbar/Navbar.tsx](/modules/Navbar/Navbar.tsx) | TypeScript JSX | 48 | 0 | 11 | 59 |
 | [modules/Search/SearchResultsPage/SearchResultsPage.tsx](/modules/Search/SearchResultsPage/SearchResultsPage.tsx) | TypeScript JSX | 26 | 0 | 7 | 33 |
 | [modules/Search/SearchResultsPage/SearchResultsPageEmptyQuery/SearchResultsPageEmptyQuery.tsx](/modules/Search/SearchResultsPage/SearchResultsPageEmptyQuery/SearchResultsPageEmptyQuery.tsx) | TypeScript JSX | 8 | 0 | 2 | 10 |
@@ -56,12 +56,12 @@ Total : 156 files,  12930 codes, 10 comments, 596 blanks, all 13536 lines
 | [modules/actorPage/ActorPageSkeleton/ActorInfoSkeleton/ActorInfoSkeleton.tsx](/modules/actorPage/ActorPageSkeleton/ActorInfoSkeleton/ActorInfoSkeleton.tsx) | TypeScript JSX | 9 | 0 | 2 | 11 |
 | [modules/actorPage/ActorPageSkeleton/ActorPageSkeleton.tsx](/modules/actorPage/ActorPageSkeleton/ActorPageSkeleton.tsx) | TypeScript JSX | 12 | 0 | 2 | 14 |
 | [modules/actors/schemas/useGetActor.schema.ts](/modules/actors/schemas/useGetActor.schema.ts) | TypeScript | 31 | 0 | 3 | 34 |
-| [modules/actors/useGetActorById/apiUseGetActorById.ts](/modules/actors/useGetActorById/apiUseGetActorById.ts) | TypeScript | 12 | 0 | 4 | 16 |
+| [modules/actors/useGetActorById/apiUseGetActorById.ts](/modules/actors/useGetActorById/apiUseGetActorById.ts) | TypeScript | 13 | 0 | 4 | 17 |
 | [modules/actors/useGetActorById/useGetActorById.ts](/modules/actors/useGetActorById/useGetActorById.ts) | TypeScript | 9 | 0 | 2 | 11 |
 | [modules/auth/Forms/FormRow/FormRow.tsx](/modules/auth/Forms/FormRow/FormRow.tsx) | TypeScript JSX | 18 | 0 | 3 | 21 |
-| [modules/auth/Forms/LoginForm/LoginForm.tsx](/modules/auth/Forms/LoginForm/LoginForm.tsx) | TypeScript JSX | 61 | 1 | 5 | 67 |
+| [modules/auth/Forms/LoginForm/LoginForm.tsx](/modules/auth/Forms/LoginForm/LoginForm.tsx) | TypeScript JSX | 55 | 0 | 5 | 60 |
 | [modules/auth/Forms/RegisterForm/RegisterForm.schema.ts](/modules/auth/Forms/RegisterForm/RegisterForm.schema.ts) | TypeScript | 14 | 0 | 3 | 17 |
-| [modules/auth/Forms/RegisterForm/RegisterForm.tsx](/modules/auth/Forms/RegisterForm/RegisterForm.tsx) | TypeScript JSX | 111 | 1 | 8 | 120 |
+| [modules/auth/Forms/RegisterForm/RegisterForm.tsx](/modules/auth/Forms/RegisterForm/RegisterForm.tsx) | TypeScript JSX | 107 | 0 | 8 | 115 |
 | [modules/auth/LogoutButton/LogoutButton.tsx](/modules/auth/LogoutButton/LogoutButton.tsx) | TypeScript JSX | 17 | 0 | 3 | 20 |
 | [modules/listPage/ListInfo/ListInfo.tsx](/modules/listPage/ListInfo/ListInfo.tsx) | TypeScript JSX | 81 | 0 | 9 | 90 |
 | [modules/listPage/ListInfo/ListInfoSkeleton/ListInfoSkeleton.tsx](/modules/listPage/ListInfo/ListInfoSkeleton/ListInfoSkeleton.tsx) | TypeScript JSX | 20 | 0 | 2 | 22 |
@@ -85,7 +85,7 @@ Total : 156 files,  12930 codes, 10 comments, 596 blanks, all 13536 lines
 | [modules/lists/hooks/useDeleteMoviesList/useDeleteMoviesList.ts](/modules/lists/hooks/useDeleteMoviesList/useDeleteMoviesList.ts) | TypeScript | 19 | 0 | 3 | 22 |
 | [modules/lists/hooks/useGetListsByUserId/apiUseGetMoviesListsByUserId.ts](/modules/lists/hooks/useGetListsByUserId/apiUseGetMoviesListsByUserId.ts) | TypeScript | 14 | 0 | 4 | 18 |
 | [modules/lists/hooks/useGetListsByUserId/useGetMoviesListsByUserId.ts](/modules/lists/hooks/useGetListsByUserId/useGetMoviesListsByUserId.ts) | TypeScript | 9 | 0 | 2 | 11 |
-| [modules/lists/hooks/useGetSingleListByListId/apiUseGetMoviesListByListId.ts](/modules/lists/hooks/useGetSingleListByListId/apiUseGetMoviesListByListId.ts) | TypeScript | 16 | 1 | 5 | 22 |
+| [modules/lists/hooks/useGetSingleListByListId/apiUseGetMoviesListByListId.ts](/modules/lists/hooks/useGetSingleListByListId/apiUseGetMoviesListByListId.ts) | TypeScript | 16 | 0 | 5 | 21 |
 | [modules/lists/hooks/useGetSingleListByListId/useGetMoviesListByListId.ts](/modules/lists/hooks/useGetSingleListByListId/useGetMoviesListByListId.ts) | TypeScript | 9 | 0 | 2 | 11 |
 | [modules/moviePage/BoxOffice/BoxOffice.tsx](/modules/moviePage/BoxOffice/BoxOffice.tsx) | TypeScript JSX | 37 | 0 | 4 | 41 |
 | [modules/moviePage/CreateReviewButton/CreateReviewButton.tsx](/modules/moviePage/CreateReviewButton/CreateReviewButton.tsx) | TypeScript JSX | 13 | 0 | 3 | 16 |
@@ -98,7 +98,7 @@ Total : 156 files,  12930 codes, 10 comments, 596 blanks, all 13536 lines
 | [modules/moviePage/MovieAwards/SingleMovieAward/SingleMovieAward.tsx](/modules/moviePage/MovieAwards/SingleMovieAward/SingleMovieAward.tsx) | TypeScript JSX | 15 | 0 | 5 | 20 |
 | [modules/moviePage/MovieDescription/MovieDescription.tsx](/modules/moviePage/MovieDescription/MovieDescription.tsx) | TypeScript JSX | 13 | 0 | 3 | 16 |
 | [modules/moviePage/MovieImage/MovieImage.tsx](/modules/moviePage/MovieImage/MovieImage.tsx) | TypeScript JSX | 18 | 0 | 3 | 21 |
-| [modules/moviePage/MovieInfo.tsx](/modules/moviePage/MovieInfo.tsx) | TypeScript JSX | 138 | 0 | 12 | 150 |
+| [modules/moviePage/MovieInfo.tsx](/modules/moviePage/MovieInfo.tsx) | TypeScript JSX | 135 | 0 | 12 | 147 |
 | [modules/moviePage/MovieMainInfo/MovieMainInfo.tsx](/modules/moviePage/MovieMainInfo/MovieMainInfo.tsx) | TypeScript JSX | 40 | 0 | 4 | 44 |
 | [modules/moviePage/MoviePageSkeleton/MovieImageSkeleton/MovieImageSkeleton.tsx](/modules/moviePage/MoviePageSkeleton/MovieImageSkeleton/MovieImageSkeleton.tsx) | TypeScript JSX | 8 | 0 | 2 | 10 |
 | [modules/moviePage/MoviePageSkeleton/MovieInfoSkeleton/MovieInfoSkeleton.tsx](/modules/moviePage/MoviePageSkeleton/MovieInfoSkeleton/MovieInfoSkeleton.tsx) | TypeScript JSX | 9 | 0 | 2 | 11 |
@@ -110,15 +110,15 @@ Total : 156 files,  12930 codes, 10 comments, 596 blanks, all 13536 lines
 | [modules/movies/schemas/useGetAllPopularMovies.schema.ts](/modules/movies/schemas/useGetAllPopularMovies.schema.ts) | TypeScript | 18 | 0 | 2 | 20 |
 | [modules/movies/schemas/useGetMovie.schema.ts](/modules/movies/schemas/useGetMovie.schema.ts) | TypeScript | 71 | 0 | 6 | 77 |
 | [modules/movies/schemas/useGetMoviesByTitle.schema.ts](/modules/movies/schemas/useGetMoviesByTitle.schema.ts) | TypeScript | 15 | 0 | 4 | 19 |
-| [modules/movies/useGetAllPopularMoviesIDPoster/apiUseGetAllPopularMoviesIDPoster.ts](/modules/movies/useGetAllPopularMoviesIDPoster/apiUseGetAllPopularMoviesIDPoster.ts) | TypeScript | 18 | 0 | 4 | 22 |
+| [modules/movies/useGetAllPopularMoviesIDPoster/apiUseGetAllPopularMoviesIDPoster.ts](/modules/movies/useGetAllPopularMoviesIDPoster/apiUseGetAllPopularMoviesIDPoster.ts) | TypeScript | 19 | 0 | 4 | 23 |
 | [modules/movies/useGetAllPopularMoviesIDPoster/hooks/useGetAllPopularMoviesIDPoster.ts](/modules/movies/useGetAllPopularMoviesIDPoster/hooks/useGetAllPopularMoviesIDPoster.ts) | TypeScript | 9 | 0 | 2 | 11 |
-| [modules/movies/useGetAllPopularMovies/apiUseGetAllPopularMovies.ts](/modules/movies/useGetAllPopularMovies/apiUseGetAllPopularMovies.ts) | TypeScript | 13 | 0 | 4 | 17 |
+| [modules/movies/useGetAllPopularMovies/apiUseGetAllPopularMovies.ts](/modules/movies/useGetAllPopularMovies/apiUseGetAllPopularMovies.ts) | TypeScript | 12 | 0 | 5 | 17 |
 | [modules/movies/useGetAllPopularMovies/hooks/useGetAllPopularMovies.ts](/modules/movies/useGetAllPopularMovies/hooks/useGetAllPopularMovies.ts) | TypeScript | 9 | 0 | 2 | 11 |
-| [modules/movies/useGetLimitedPopularMoviesIDPoster/apiUseGetLimitedPopularMoviesIDPoster.ts](/modules/movies/useGetLimitedPopularMoviesIDPoster/apiUseGetLimitedPopularMoviesIDPoster.ts) | TypeScript | 19 | 0 | 5 | 24 |
+| [modules/movies/useGetLimitedPopularMoviesIDPoster/apiUseGetLimitedPopularMoviesIDPoster.ts](/modules/movies/useGetLimitedPopularMoviesIDPoster/apiUseGetLimitedPopularMoviesIDPoster.ts) | TypeScript | 20 | 0 | 6 | 26 |
 | [modules/movies/useGetLimitedPopularMoviesIDPoster/useGetLimitedPopularMoviesIDPoster.ts](/modules/movies/useGetLimitedPopularMoviesIDPoster/useGetLimitedPopularMoviesIDPoster.ts) | TypeScript | 9 | 0 | 2 | 11 |
-| [modules/movies/useGetMovieById/apiUseGetMovieById.ts](/modules/movies/useGetMovieById/apiUseGetMovieById.ts) | TypeScript | 12 | 0 | 4 | 16 |
+| [modules/movies/useGetMovieById/apiUseGetMovieById.ts](/modules/movies/useGetMovieById/apiUseGetMovieById.ts) | TypeScript | 13 | 0 | 4 | 17 |
 | [modules/movies/useGetMovieById/useGetMovieById.ts](/modules/movies/useGetMovieById/useGetMovieById.ts) | TypeScript | 9 | 0 | 2 | 11 |
-| [modules/movies/useGetMoviesByTitle/apiUseGetMoviesByTitle.ts](/modules/movies/useGetMoviesByTitle/apiUseGetMoviesByTitle.ts) | TypeScript | 23 | 0 | 5 | 28 |
+| [modules/movies/useGetMoviesByTitle/apiUseGetMoviesByTitle.ts](/modules/movies/useGetMoviesByTitle/apiUseGetMoviesByTitle.ts) | TypeScript | 22 | 0 | 5 | 27 |
 | [modules/movies/useGetMoviesByTitle/useGetMoviesByTitle.ts](/modules/movies/useGetMoviesByTitle/useGetMoviesByTitle.ts) | TypeScript | 9 | 0 | 2 | 11 |
 | [modules/navigation/hooks/useQueryString/useQueryString.ts](/modules/navigation/hooks/useQueryString/useQueryString.ts) | TypeScript | 25 | 0 | 7 | 32 |
 | [modules/navigation/hooks/useRouteChanged/useRouteChanged.tsx](/modules/navigation/hooks/useRouteChanged/useRouteChanged.tsx) | TypeScript JSX | 12 | 0 | 4 | 16 |
@@ -140,8 +140,6 @@ Total : 156 files,  12930 codes, 10 comments, 596 blanks, all 13536 lines
 | [modules/ui/Button/BaseButton/BaseButton.tsx](/modules/ui/Button/BaseButton/BaseButton.tsx) | TypeScript JSX | 61 | 0 | 8 | 69 |
 | [modules/ui/Button/Button.tsx](/modules/ui/Button/Button.tsx) | TypeScript JSX | 16 | 0 | 4 | 20 |
 | [modules/ui/Button/Link.tsx](/modules/ui/Button/Link.tsx) | TypeScript JSX | 12 | 0 | 3 | 15 |
-| [modules/ui/Drawer/Drawer.tsx](/modules/ui/Drawer/Drawer.tsx) | TypeScript JSX | 39 | 0 | 4 | 43 |
-| [modules/ui/Drawer/DrawerItem/DrawerItem.tsx](/modules/ui/Drawer/DrawerItem/DrawerItem.tsx) | TypeScript JSX | 17 | 0 | 3 | 20 |
 | [modules/ui/ErrorMessage/ErrorMessage.tsx](/modules/ui/ErrorMessage/ErrorMessage.tsx) | TypeScript JSX | 15 | 0 | 3 | 18 |
 | [modules/ui/GoBackButton/GoBackButton.tsx](/modules/ui/GoBackButton/GoBackButton.tsx) | TypeScript JSX | 16 | 0 | 4 | 20 |
 | [modules/ui/Modal/Modal.tsx](/modules/ui/Modal/Modal.tsx) | TypeScript JSX | 61 | 0 | 4 | 65 |
@@ -155,15 +153,13 @@ Total : 156 files,  12930 codes, 10 comments, 596 blanks, all 13536 lines
 | [modules/users/hooks/useLogout/apiUseLogout.ts](/modules/users/hooks/useLogout/apiUseLogout.ts) | TypeScript | 6 | 0 | 3 | 9 |
 | [modules/users/hooks/useLogout/useLogout.ts](/modules/users/hooks/useLogout/useLogout.ts) | TypeScript | 21 | 0 | 3 | 24 |
 | [modules/users/hooks/useSignup/apiUseSignup.ts](/modules/users/hooks/useSignup/apiUseSignup.ts) | TypeScript | 23 | 0 | 5 | 28 |
-| [modules/users/hooks/useSignup/useSignup.ts](/modules/users/hooks/useSignup/useSignup.ts) | TypeScript | 26 | 0 | 4 | 30 |
+| [modules/users/hooks/useSignup/useSignup.ts](/modules/users/hooks/useSignup/useSignup.ts) | TypeScript | 28 | 0 | 4 | 32 |
 | [modules/users/hooks/useUser/useUser.ts](/modules/users/hooks/useUser/useUser.ts) | TypeScript | 8 | 0 | 2 | 10 |
 | [modules/users/utils/getCurrentUser/getCurrentUser.ts](/modules/users/utils/getCurrentUser/getCurrentUser.ts) | TypeScript | 8 | 0 | 2 | 10 |
-| [next.config.js](/next.config.js) | JavaScript | 6 | 1 | 1 | 8 |
+| [next.config.js](/next.config.js) | JavaScript | 9 | 1 | 1 | 11 |
 | [package-lock.json](/package-lock.json) | JSON | 9,177 | 0 | 1 | 9,178 |
 | [package.json](/package.json) | JSON | 46 | 0 | 1 | 47 |
 | [postcss.config.js](/postcss.config.js) | JavaScript | 6 | 0 | 1 | 7 |
-| [seeds/movies/clearMovies.js](/seeds/movies/clearMovies.js) | JavaScript | 5 | 0 | 3 | 8 |
-| [seeds/movies/moviesSeeder.mjs](/seeds/movies/moviesSeeder.mjs) | JavaScript | 65 | 0 | 7 | 72 |
 | [services/supabase.mjs](/services/supabase.mjs) | JavaScript | 6 | 0 | 1 | 7 |
 | [tailwind.config.ts](/tailwind.config.ts) | TypeScript | 24 | 1 | 1 | 26 |
 | [tsconfig.json](/tsconfig.json) | JSON with Comments | 27 | 0 | 1 | 28 |

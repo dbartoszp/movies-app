@@ -1,10 +1,10 @@
 # Summary
 
-Date : 2024-01-02 15:41:59
+Date : 2024-01-11 19:15:29
 
-Directory c:\\Users\\Bartuś\\Desktop\\repos\\movies-app
+Directory c:\\Users\\Bartuś\\Desktop\\repos\\moviesapptest\\movies-app\\movies-app
 
-Total : 156 files,  12930 codes, 10 comments, 596 blanks, all 13536 lines
+Total : 152 files,  12805 codes, 3 comments, 579 blanks, all 13387 lines
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
@@ -12,18 +12,18 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | language | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
 | JSON | 3 | 9,231 | 0 | 3 | 9,234 |
-| TypeScript JSX | 89 | 2,544 | 6 | 358 | 2,908 |
-| TypeScript | 55 | 991 | 2 | 202 | 1,195 |
-| JavaScript | 5 | 88 | 1 | 13 | 102 |
+| TypeScript JSX | 87 | 2,482 | 0 | 349 | 2,831 |
+| TypeScript | 55 | 995 | 1 | 204 | 1,200 |
 | JSON with Comments | 2 | 30 | 0 | 2 | 32 |
 | Markdown | 1 | 23 | 0 | 14 | 37 |
 | CSS | 1 | 23 | 1 | 4 | 28 |
+| JavaScript | 3 | 21 | 1 | 3 | 25 |
 
 ## Directories
 | path | files | code | comment | blank | total |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| . | 156 | 12,930 | 10 | 596 | 13,536 |
-| . (Files) | 10 | 9,328 | 2 | 24 | 9,354 |
+| . | 152 | 12,805 | 3 | 579 | 13,387 |
+| . (Files) | 10 | 9,331 | 2 | 24 | 9,357 |
 | app | 14 | 344 | 1 | 50 | 395 |
 | app (Files) | 4 | 116 | 1 | 14 | 131 |
 | app\\account | 1 | 25 | 0 | 4 | 29 |
@@ -40,10 +40,10 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | app\\myLists | 1 | 24 | 0 | 4 | 28 |
 | app\\myReviews | 1 | 24 | 0 | 4 | 28 |
 | app\\unauthenticated | 1 | 14 | 0 | 3 | 17 |
-| modules | 129 | 3,182 | 7 | 511 | 3,700 |
+| modules | 127 | 3,124 | 0 | 504 | 3,628 |
 | modules\\Footer | 1 | 30 | 0 | 2 | 32 |
-| modules\\Header | 1 | 29 | 4 | 5 | 38 |
-| modules\\HomepageBanner | 1 | 28 | 0 | 2 | 30 |
+| modules\\Header | 1 | 29 | 0 | 3 | 32 |
+| modules\\HomepageBanner | 1 | 35 | 0 | 2 | 37 |
 | modules\\Navbar | 1 | 48 | 0 | 11 | 59 |
 | modules\\Search | 4 | 71 | 0 | 15 | 86 |
 | modules\\Search\\SearchResultsPage | 3 | 42 | 0 | 11 | 53 |
@@ -81,14 +81,14 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | modules\\actorPage\\ActorPageSkeleton (Files) | 1 | 12 | 0 | 2 | 14 |
 | modules\\actorPage\\ActorPageSkeleton\\ActorImageSkeleton | 1 | 8 | 0 | 2 | 10 |
 | modules\\actorPage\\ActorPageSkeleton\\ActorInfoSkeleton | 1 | 9 | 0 | 2 | 11 |
-| modules\\actors | 3 | 52 | 0 | 9 | 61 |
+| modules\\actors | 3 | 53 | 0 | 9 | 62 |
 | modules\\actors\\schemas | 1 | 31 | 0 | 3 | 34 |
-| modules\\actors\\useGetActorById | 2 | 21 | 0 | 6 | 27 |
-| modules\\auth | 5 | 221 | 2 | 22 | 245 |
-| modules\\auth\\Forms | 4 | 204 | 2 | 19 | 225 |
+| modules\\actors\\useGetActorById | 2 | 22 | 0 | 6 | 28 |
+| modules\\auth | 5 | 211 | 0 | 22 | 233 |
+| modules\\auth\\Forms | 4 | 194 | 0 | 19 | 213 |
 | modules\\auth\\Forms\\FormRow | 1 | 18 | 0 | 3 | 21 |
-| modules\\auth\\Forms\\LoginForm | 1 | 61 | 1 | 5 | 67 |
-| modules\\auth\\Forms\\RegisterForm | 2 | 125 | 1 | 11 | 137 |
+| modules\\auth\\Forms\\LoginForm | 1 | 55 | 0 | 5 | 60 |
+| modules\\auth\\Forms\\RegisterForm | 2 | 121 | 0 | 11 | 132 |
 | modules\\auth\\LogoutButton | 1 | 17 | 0 | 3 | 20 |
 | modules\\listPage | 4 | 141 | 0 | 19 | 160 |
 | modules\\listPage\\ListInfo | 2 | 101 | 0 | 11 | 112 |
@@ -97,7 +97,7 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | modules\\listPage\\MoviePreview | 2 | 40 | 0 | 8 | 48 |
 | modules\\listPage\\MoviePreview (Files) | 1 | 36 | 0 | 6 | 42 |
 | modules\\listPage\\MoviePreview\\MoviePreviewSkeleton | 1 | 4 | 0 | 2 | 6 |
-| modules\\lists | 20 | 480 | 1 | 89 | 570 |
+| modules\\lists | 20 | 480 | 0 | 89 | 569 |
 | modules\\lists\\components | 7 | 231 | 0 | 33 | 264 |
 | modules\\lists\\components\\AddToList | 3 | 65 | 0 | 14 | 79 |
 | modules\\lists\\components\\AddToList (Files) | 1 | 25 | 0 | 5 | 30 |
@@ -110,7 +110,7 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | modules\\lists\\components\\ListPreview\\MoviePreviewSmall | 2 | 22 | 0 | 7 | 29 |
 | modules\\lists\\components\\ListPreview\\MoviePreviewSmall (Files) | 1 | 18 | 0 | 5 | 23 |
 | modules\\lists\\components\\ListPreview\\MoviePreviewSmall\\MoviePreviewSmallSkeleton | 1 | 4 | 0 | 2 | 6 |
-| modules\\lists\\hooks | 13 | 249 | 1 | 56 | 306 |
+| modules\\lists\\hooks | 13 | 249 | 0 | 56 | 305 |
 | modules\\lists\\hooks (Files) | 1 | 10 | 0 | 3 | 13 |
 | modules\\lists\\hooks\\updateMoviesList | 4 | 113 | 0 | 26 | 139 |
 | modules\\lists\\hooks\\updateMoviesList\\useAddToMoviesList | 2 | 56 | 0 | 13 | 69 |
@@ -118,9 +118,9 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | modules\\lists\\hooks\\useCreateMoviesList | 2 | 47 | 0 | 7 | 54 |
 | modules\\lists\\hooks\\useDeleteMoviesList | 2 | 31 | 0 | 7 | 38 |
 | modules\\lists\\hooks\\useGetListsByUserId | 2 | 23 | 0 | 6 | 29 |
-| modules\\lists\\hooks\\useGetSingleListByListId | 2 | 25 | 1 | 7 | 33 |
-| modules\\moviePage | 19 | 523 | 0 | 79 | 602 |
-| modules\\moviePage (Files) | 1 | 138 | 0 | 12 | 150 |
+| modules\\lists\\hooks\\useGetSingleListByListId | 2 | 25 | 0 | 7 | 32 |
+| modules\\moviePage | 19 | 520 | 0 | 79 | 599 |
+| modules\\moviePage (Files) | 1 | 135 | 0 | 12 | 147 |
 | modules\\moviePage\\BoxOffice | 1 | 37 | 0 | 4 | 41 |
 | modules\\moviePage\\CreateReviewButton | 1 | 13 | 0 | 3 | 16 |
 | modules\\moviePage\\FullCastContainer | 2 | 41 | 0 | 7 | 48 |
@@ -144,18 +144,18 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | modules\\moviePage\\SimilarMovies | 2 | 56 | 0 | 11 | 67 |
 | modules\\moviePage\\SimilarMovies (Files) | 1 | 27 | 0 | 6 | 33 |
 | modules\\moviePage\\SimilarMovies\\SingleSimilarMovie | 1 | 29 | 0 | 5 | 34 |
-| modules\\movies | 14 | 266 | 0 | 48 | 314 |
+| modules\\movies | 14 | 267 | 0 | 50 | 317 |
 | modules\\movies\\MoviesList | 1 | 32 | 0 | 4 | 36 |
 | modules\\movies\\schemas | 3 | 104 | 0 | 12 | 116 |
-| modules\\movies\\useGetAllPopularMovies | 2 | 22 | 0 | 6 | 28 |
-| modules\\movies\\useGetAllPopularMovies (Files) | 1 | 13 | 0 | 4 | 17 |
-| modules\\movies\\useGetAllPopularMoviesIDPoster | 2 | 27 | 0 | 6 | 33 |
-| modules\\movies\\useGetAllPopularMoviesIDPoster (Files) | 1 | 18 | 0 | 4 | 22 |
+| modules\\movies\\useGetAllPopularMovies | 2 | 21 | 0 | 7 | 28 |
+| modules\\movies\\useGetAllPopularMovies (Files) | 1 | 12 | 0 | 5 | 17 |
+| modules\\movies\\useGetAllPopularMoviesIDPoster | 2 | 28 | 0 | 6 | 34 |
+| modules\\movies\\useGetAllPopularMoviesIDPoster (Files) | 1 | 19 | 0 | 4 | 23 |
 | modules\\movies\\useGetAllPopularMoviesIDPoster\\hooks | 1 | 9 | 0 | 2 | 11 |
 | modules\\movies\\useGetAllPopularMovies\\hooks | 1 | 9 | 0 | 2 | 11 |
-| modules\\movies\\useGetLimitedPopularMoviesIDPoster | 2 | 28 | 0 | 7 | 35 |
-| modules\\movies\\useGetMovieById | 2 | 21 | 0 | 6 | 27 |
-| modules\\movies\\useGetMoviesByTitle | 2 | 32 | 0 | 7 | 39 |
+| modules\\movies\\useGetLimitedPopularMoviesIDPoster | 2 | 29 | 0 | 8 | 37 |
+| modules\\movies\\useGetMovieById | 2 | 22 | 0 | 6 | 28 |
+| modules\\movies\\useGetMoviesByTitle | 2 | 31 | 0 | 7 | 38 |
 | modules\\navigation | 2 | 37 | 0 | 11 | 48 |
 | modules\\navigation\\hooks | 2 | 37 | 0 | 11 | 48 |
 | modules\\navigation\\hooks\\useQueryString | 1 | 25 | 0 | 7 | 32 |
@@ -174,13 +174,10 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | modules\\reviews\\hooks\\useGetMovieAppReviewInfo | 2 | 31 | 0 | 9 | 40 |
 | modules\\reviews\\hooks\\useGetReviewsByUserId | 2 | 25 | 0 | 6 | 31 |
 | modules\\reviews\\utils | 1 | 15 | 0 | 4 | 19 |
-| modules\\ui | 13 | 367 | 0 | 53 | 420 |
+| modules\\ui | 11 | 311 | 0 | 46 | 357 |
 | modules\\ui\\Button | 3 | 89 | 0 | 15 | 104 |
 | modules\\ui\\Button (Files) | 2 | 28 | 0 | 7 | 35 |
 | modules\\ui\\Button\\BaseButton | 1 | 61 | 0 | 8 | 69 |
-| modules\\ui\\Drawer | 2 | 56 | 0 | 7 | 63 |
-| modules\\ui\\Drawer (Files) | 1 | 39 | 0 | 4 | 43 |
-| modules\\ui\\Drawer\\DrawerItem | 1 | 17 | 0 | 3 | 20 |
 | modules\\ui\\ErrorMessage | 1 | 15 | 0 | 3 | 18 |
 | modules\\ui\\GoBackButton | 1 | 16 | 0 | 4 | 20 |
 | modules\\ui\\Modal | 2 | 78 | 0 | 7 | 85 |
@@ -191,16 +188,14 @@ Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-
 | modules\\ui\\ReviewPreview\\ReviewPreviewSkeleton | 1 | 4 | 0 | 2 | 6 |
 | modules\\ui\\Text | 1 | 26 | 0 | 7 | 33 |
 | modules\\ui\\UnauthorizedBox | 1 | 16 | 0 | 2 | 18 |
-| modules\\users | 8 | 129 | 0 | 26 | 155 |
-| modules\\users\\hooks | 7 | 121 | 0 | 24 | 145 |
+| modules\\users | 8 | 131 | 0 | 26 | 157 |
+| modules\\users\\hooks | 7 | 123 | 0 | 24 | 147 |
 | modules\\users\\hooks\\useLogin | 2 | 37 | 0 | 7 | 44 |
 | modules\\users\\hooks\\useLogout | 2 | 27 | 0 | 6 | 33 |
-| modules\\users\\hooks\\useSignup | 2 | 49 | 0 | 9 | 58 |
+| modules\\users\\hooks\\useSignup | 2 | 51 | 0 | 9 | 60 |
 | modules\\users\\hooks\\useUser | 1 | 8 | 0 | 2 | 10 |
 | modules\\users\\utils | 1 | 8 | 0 | 2 | 10 |
 | modules\\users\\utils\\getCurrentUser | 1 | 8 | 0 | 2 | 10 |
-| seeds | 2 | 70 | 0 | 10 | 80 |
-| seeds\\movies | 2 | 70 | 0 | 10 | 80 |
 | services | 1 | 6 | 0 | 1 | 7 |
 
 Summary / [Details](details.md) / [Diff Summary](diff.md) / [Diff Details](diff-details.md)

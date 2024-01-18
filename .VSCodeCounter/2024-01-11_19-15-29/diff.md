@@ -1,8 +1,8 @@
 # Diff Summary
 
-Date : 2024-01-02 15:41:59
+Date : 2024-01-11 19:15:29
 
-Directory c:\\Users\\Bartuś\\Desktop\\repos\\movies-app
+Directory c:\\Users\\Bartuś\\Desktop\\repos\\moviesapptest\\movies-app\\movies-app
 
 Total : 0 files,  0 codes, 0 comments, 0 blanks, all 0 lines
 

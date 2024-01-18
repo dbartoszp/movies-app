@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useGetActorReturnSchema } from '../schemas/useGetActor.schema';
 
-const SEARCH_ACTOR_BY_ID_URL = 'https://imdb-api.com/en/API/Name/';
+const SEARCH_ACTOR_BY_ID_URL = 'https://tv-api.com/en/API/Name/';
 
 export const getActorById = async (id: string) => {
   const res = await axios.get(

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useGetMoviesByTitleReturnSchema } from '../schemas/useGetMoviesByTitle.schema';
 
-const SEARCH_MOVIE_BY_TITLE_URL = 'https://imdb-api.com/en/API/SearchMovie/';
+const SEARCH_MOVIE_BY_TITLE_URL = 'https://tv-api.com/en/API/SearchMovie/';
 
 const responseIfEmptyQuery = {
   searchType: 'Movie',

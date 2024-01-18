@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useGetMovieReturnSchema } from '../schemas/useGetMovie.schema';
 
-const SEARCH_MOVIE_BY_ID_URL = 'https://imdb-api.com/en/API/Title/';
+const SEARCH_MOVIE_BY_ID_URL = 'https://tv-api.com/en/API/Title/';
 
 export const getMovieById = async (id: string) => {
   const res = await axios.get(
