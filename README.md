@@ -22,11 +22,15 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 <!-- Movies App -->
 
-## This is a web application for movie and actor data browsing. It is also possible to create an acount, review and add movies to custom lists. It is made using data from TV-API (formerly known as IMDb-API).
+## Movies App
+
+This is a web application for movie and actor data browsing. It is also possible to create an acount, review and add movies to custom lists. It is made using data from TV-API (formerly known as IMDb-API).
 
 <!-- Built with -->
 
 ## Built with:
+
+![nextjs][NEXTJS] ![typescript][TYPESCRIPT] ![tailwindcss][TAILWINDCSS] ![supabase][SUPABASE]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
