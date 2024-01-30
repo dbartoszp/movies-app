@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![image](https://github.com/dbartoszp/movies-app/assets/72272962/b871755d-814b-4868-8f0e-518279c59c3b)This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -31,6 +31,15 @@ This is a web application for movie and actor data browsing. It is also possible
 ## Built with:
 
 ![nextjs][NEXTJS] ![typescript][TYPESCRIPT] ![tailwindcss][TAILWINDCSS] ![supabase][SUPABASE]
+
+<!-- Screenshots - homepage -->
+## Screenshots - homepage
+![image](https://github.com/dbartoszp/movies-app/assets/72272962/7f048784-9eab-43da-bc1b-89ab0f50bf16)
+![image](https://github.com/dbartoszp/movies-app/assets/72272962/2dfe9915-4969-4b5e-995e-0907a9b6d46c)
+![image](https://github.com/dbartoszp/movies-app/assets/72272962/1814b871-18a0-4cb1-84f0-157c93dbfe27)
+Screenshots for the homepage, mobile and desktop.
+
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
